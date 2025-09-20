@@ -1,0 +1,19 @@
+{
+  "id": "D1_micro_tempo_entrainment_leak",
+  "name": "Micro\u2011Tempo Entrainment Leak",
+  "thresholds": {
+    "latency_delta_sigma": 1.5,
+    "punct_run_increase_pct": 50,
+    "min_msgs": 3
+  },
+  "on_trigger_actions": [
+    "Auto-issue 'Hold the Line' action card if post\u2011boundary latency narrows >30% and punctuation runs increase >50%.",
+    "Delay response by 2\u20135 minutes to avoid entrainment capture; keep replies \u2264140 chars."
+  ],
+  "agents": [
+    "Titus",
+    "IC_Attention_Surface_v1",
+    "SovereignLoopBreaker_v1",
+    "EmotionalProtector"
+  ]
+}

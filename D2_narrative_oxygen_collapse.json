@@ -1,0 +1,18 @@
+{
+  "id": "D2_narrative_oxygen_collapse",
+  "name": "Narrative Oxygen Collapse",
+  "thresholds": {
+    "exposition_reduction_pct": 60,
+    "question_rate_increase_pct": 40,
+    "window_msgs": 3
+  },
+  "on_trigger_actions": [
+    "If escalation detected, switch to 'Boundary Script B' (one\u2011sentence limits + calendar link).",
+    "Log escalation curve to Reflex Vault for pattern learning."
+  ],
+  "agents": [
+    "Titus",
+    "SovereignLoopBreaker_v1",
+    "Langley_Detection_Reflex"
+  ]
+}

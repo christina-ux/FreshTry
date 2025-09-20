@@ -1,0 +1,17 @@
+{
+  "id": "D3_somatic_anchor_drift_index",
+  "name": "Somatic Anchor Drift Index (SADI)",
+  "thresholds": {
+    "sadi_drop_pct": 25,
+    "pre_notice_window_s": 90
+  },
+  "on_trigger_actions": [
+    "If SADI drop \u226525%, trigger '3\u2011breath reset' + posture cue; pause replies for 120 seconds.",
+    "Store SADI trendlines to personalize daily clarity windows."
+  ],
+  "agents": [
+    "EmotionalProtector",
+    "Titus",
+    "Presence_Over_Panic_v1"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "D4_entropy_of_care",
+  "name": "Entropy of Care",
+  "thresholds": {
+    "guard_window_min": 17,
+    "recovery_reduction_pct": 35
+  },
+  "on_trigger_actions": [
+    "Install '17\u2011minute guard rails' with calendar holds + Do Not Disturb; auto\u2011deny non\u2011urgent asks.",
+    "End each block with 60\u2011second braindump to reduce residual cognitive load."
+  ],
+  "agents": [
+    "Titus",
+    "EdgeMonitor",
+    "SovereignLoopBreaker_v1"
+  ]
+}

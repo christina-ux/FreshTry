@@ -1,0 +1,19 @@
+{
+  "id": "D5_clarity_resonance_windows",
+  "name": "Clarity Resonance Windows",
+  "thresholds": {
+    "lux_min": 200,
+    "lux_max": 400,
+    "sound_db_max": 35,
+    "caffeine_mg_min": 15,
+    "caffeine_mg_max": 25
+  },
+  "on_trigger_actions": [
+    "Pre\u2011schedule 2\u00d745\u2011min Clarity Windows daily; pre\u2011dose caffeine micro\u2011sip; set environment to triad targets.",
+    "Route hard calls/strategy to these windows; forbid context switching."
+  ],
+  "agents": [
+    "Titus",
+    "IC_Attention_Surface_v1"
+  ]
+}
