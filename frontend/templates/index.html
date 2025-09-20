@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolicyEdgeAI - Compliance Analysis Tool</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PolicyEdge<span>AI</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" data-page="dashboard">Dashboard</a></li>
+                    <li><a href="#" data-page="controls">Controls</a></li>
+                    <li><a href="#" data-page="mapping">Mapping</a></li>
+                    <li><a href="#" data-page="analysis">Analysis</a></li>
+                    <li><a href="#" data-page="upload">Upload</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Dashboard Page -->
+            <section id="dashboard" class="page active">
+                <div class="dashboard-header">
+                    <h2>Compliance Dashboard</h2>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <h3>Total Controls</h3>
+                            <div class="stat-value" id="total-controls">--</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Frameworks</h3>
+                            <div class="stat-value" id="total-frameworks">--</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Mappings</h3>
+                            <div class="stat-value" id="total-mappings">--</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-content">
+                    <div class="dashboard-card">
+                        <h3>Framework Distribution</h3>
+                        <div class="chart-container">
+                            <div id="framework-chart" class="chart">
+                                <!-- Chart will be rendered here -->
+                                <div class="placeholder-chart">Chart loading...</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <h3>Recent Activity</h3>
+                        <ul class="activity-list" id="recent-activity">
+                            <li class="activity-item">
+                                <span class="activity-time">Just now</span>
+                                <span class="activity-desc">Welcome to PolicyEdgeAI!</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Controls Page -->
+            <section id="controls" class="page">
+                <h2>Controls Library</h2>
+                
+                <div class="controls-search">
+                    <div class="search-filters">
+                        <div class="filter-group">
+                            <label for="framework-filter">Framework:</label>
+                            <select id="framework-filter">
+                                <option value="">All Frameworks</option>
+                                <option value="NIST 800-53">NIST 800-53</option>
+                                <option value="HIPAA">HIPAA</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="family-filter">Control Family:</label>
+                            <select id="family-filter">
+                                <option value="">All Families</option>
+                                <!-- Will be populated dynamically -->
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group search-box">
+                            <label for="keyword-search">Search:</label>
+                            <input type="text" id="keyword-search" placeholder="Search controls...">
+                        </div>
+                        
+                        <button id="search-controls" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+                
+                <div class="controls-results">
+                    <table id="controls-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Framework</th>
+                                <th>Family</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="controls-list">
+                            <!-- Will be populated dynamically -->
+                        </tbody>
+                    </table>
+                    
+                    <div id="controls-pagination" class="pagination">
+                        <!-- Pagination controls will be added here -->
+                    </div>
+                </div>
+                
+                <!-- Control Detail Modal -->
+                <div id="control-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3 id="modal-control-id">Control ID</h3>
+                        <h4 id="modal-control-title">Control Title</h4>
+                        
+                        <div class="control-details">
+                            <div class="detail-group">
+                                <label>Framework:</label>
+                                <span id="modal-control-framework"></span>
+                            </div>
+                            
+                            <div class="detail-group">
+                                <label>Family:</label>
+                                <span id="modal-control-family"></span>
+                            </div>
+                            
+                            <div class="detail-group">
+                                <label>Source:</label>
+                                <span id="modal-control-source"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="control-description">
+                            <h4>Description:</h4>
+                            <p id="modal-control-description"></p>
+                        </div>
+                        
+                        <div class="control-mappings">
+                            <h4>Mapped Controls:</h4>
+                            <ul id="modal-control-mappings">
+                                <!-- Will be populated dynamically -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mapping Page -->
+            <section id="mapping" class="page">
+                <h2>Control Mapping</h2>
+                
+                <div class="mapping-container">
+                    <div class="mapping-selection">
+                        <div class="framework-selection">
+                            <div class="framework-source">
+                                <h3>Source Framework</h3>
+                                <select id="source-framework">
+                                    <option value="NIST 800-53">NIST 800-53</option>
+                                    <option value="HIPAA">HIPAA</option>
+                                </select>
+                                
+                                <div class="controls-list" id="source-controls">
+                                    <!-- Will be populated dynamically -->
+                                    <div class="controls-placeholder">Select a framework to view controls</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mapping-arrows">
+                                <div class="arrow-container">
+                                    <span class="arrow">→</span>
+                                </div>
+                            </div>
+                            
+                            <div class="framework-target">
+                                <h3>Target Framework</h3>
+                                <select id="target-framework">
+                                    <option value="HIPAA">HIPAA</option>
+                                    <option value="NIST 800-53">NIST 800-53</option>
+                                </select>
+                                
+                                <div class="controls-list" id="target-controls">
+                                    <!-- Will be populated dynamically -->
+                                    <div class="controls-placeholder">Select a framework to view controls</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mapping-actions">
+                            <button id="create-mapping" class="btn btn-primary">Create Mapping</button>
+                            <button id="remove-mapping" class="btn btn-danger">Remove Mapping</button>
+                        </div>
+                    </div>
+                    
+                    <div class="mapping-visualization">
+                        <h3>Mapping Visualization</h3>
+                        <div id="mapping-graph" class="visualization-container">
+                            <!-- Visualization will be rendered here -->
+                            <div class="placeholder-visualization">Select controls to view mapping visualization</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analysis Page -->
+            <section id="analysis" class="page">
+                <h2>Gap Analysis</h2>
+                
+                <div class="analysis-container">
+                    <div class="analysis-form">
+                        <div class="form-group">
+                            <label for="analysis-framework1">Framework 1:</label>
+                            <select id="analysis-framework1">
+                                <option value="NIST 800-53">NIST 800-53</option>
+                                <option value="HIPAA">HIPAA</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="analysis-framework2">Framework 2:</label>
+                            <select id="analysis-framework2">
+                                <option value="HIPAA">HIPAA</option>
+                                <option value="NIST 800-53">NIST 800-53</option>
+                            </select>
+                        </div>
+                        
+                        <button id="run-analysis" class="btn btn-primary">Run Analysis</button>
+                    </div>
+                    
+                    <div class="analysis-results">
+                        <div class="results-summary">
+                            <h3>Analysis Summary</h3>
+                            <div class="summary-stats">
+                                <div class="stat-item">
+                                    <label>Framework 1 Controls:</label>
+                                    <span id="framework1-count">--</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <label>Framework 2 Controls:</label>
+                                    <span id="framework2-count">--</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <label>Unmapped Controls:</label>
+                                    <span id="unmapped-count">--</span>
+                                </div>
+                                
+                                <div class="stat-item">
+                                    <label>Gap Percentage:</label>
+                                    <span id="gap-percentage">--</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="unmapped-controls">
+                            <h3>Unmapped Controls</h3>
+                            <table id="unmapped-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Title</th>
+                                        <th>Family</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="unmapped-list">
+                                    <!-- Will be populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="ai-summary">
+                            <h3>AI Summary</h3>
+                            <div id="summary-container" class="summary-text">
+                                <p>Run an analysis to generate an AI summary of the gaps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upload Page -->
+            <section id="upload" class="page">
+                <h2>Upload Documents</h2>
+                
+                <div class="upload-container">
+                    <div class="upload-card">
+                        <h3>NIST 800-53</h3>
+                        <p>Upload NIST 800-53 PDF document to extract controls.</p>
+                        
+                        <div class="upload-form">
+                            <div class="file-input">
+                                <input type="file" id="nist-file" accept=".pdf">
+                                <label for="nist-file" class="file-label">Choose File</label>
+                                <span id="nist-file-name" class="file-name">No file chosen</span>
+                            </div>
+                            
+                            <button id="upload-nist" class="btn btn-primary">Upload</button>
+                        </div>
+                        
+                        <div id="nist-upload-result" class="upload-result">
+                            <!-- Upload results will appear here -->
+                        </div>
+                    </div>
+                    
+                    <div class="upload-card">
+                        <h3>HIPAA</h3>
+                        <p>Upload HIPAA PDF document to extract regulations.</p>
+                        
+                        <div class="upload-form">
+                            <div class="file-input">
+                                <input type="file" id="hipaa-file" accept=".pdf">
+                                <label for="hipaa-file" class="file-label">Choose File</label>
+                                <span id="hipaa-file-name" class="file-name">No file chosen</span>
+                            </div>
+                            
+                            <button id="upload-hipaa" class="btn btn-primary">Upload</button>
+                        </div>
+                        
+                        <div id="hipaa-upload-result" class="upload-result">
+                            <!-- Upload results will appear here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PolicyEdgeAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../static/js/app.js"></script>
+</body>
+</html>

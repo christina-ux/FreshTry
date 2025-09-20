@@ -1,0 +1,28 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "policyedgeai:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8000",
+      "HostPort": "80"
+    },
+    {
+      "ContainerPort": "8501",
+      "HostPort": "8501"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/app/current/data",
+      "ContainerDirectory": "/app/data"
+    },
+    {
+      "HostDirectory": "/var/app/current/logs",
+      "ContainerDirectory": "/app/logs"
+    }
+  ],
+  "Logging": "/var/app/current/logs"
+}

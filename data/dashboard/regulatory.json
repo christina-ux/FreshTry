@@ -1,0 +1,118 @@
+[
+  {
+    "control_id": "AC-2",
+    "control_framework": "NIST 800-53",
+    "related_assets": [
+      "ASSET-001",
+      "ASSET-002",
+      "ASSET-003",
+      "ASSET-004"
+    ],
+    "implementation_status": "compliant",
+    "implementation_date": "2022-06-30",
+    "last_assessment_date": "2023-01-15",
+    "next_assessment_date": "2023-07-15",
+    "responsible_party": "Identity Management Team",
+    "risk_rating": "high",
+    "evidence": [
+      {
+        "evidence_id": "EVID-AC2-001",
+        "description": "Account management procedures document",
+        "evidence_type": "document",
+        "collection_date": "2023-01-15",
+        "collected_by": "Jane Smith",
+        "document_location": "Compliance Repository ID: AC2-PROC-V2",
+        "review_status": "approved"
+      }
+    ],
+    "notes": "Control implementation verified through automated account management workflow"
+  },
+  {
+    "control_id": "AC-3",
+    "control_framework": "NIST 800-53",
+    "related_assets": [
+      "ASSET-001",
+      "ASSET-003",
+      "ASSET-005"
+    ],
+    "implementation_status": "partially_compliant",
+    "implementation_date": "2022-08-15",
+    "last_assessment_date": "2023-02-10",
+    "next_assessment_date": "2023-08-10",
+    "responsible_party": "Security Operations Team",
+    "risk_rating": "critical",
+    "evidence": [
+      {
+        "evidence_id": "EVID-AC3-001",
+        "description": "Access enforcement policy document",
+        "evidence_type": "document",
+        "collection_date": "2023-02-10",
+        "collected_by": "Robert Chen",
+        "document_location": "Compliance Repository ID: AC3-POL-V1",
+        "review_status": "needs_updates"
+      }
+    ],
+    "notes": "Server access enforcement is compliant, but application-level enforcement needs enhancement"
+  },
+  {
+    "control_id": "AU-4",
+    "control_framework": "NIST 800-53",
+    "related_assets": [
+      "ASSET-001",
+      "ASSET-003",
+      "ASSET-005"
+    ],
+    "implementation_status": "compliant",
+    "implementation_date": "2022-07-22",
+    "last_assessment_date": "2023-01-30",
+    "next_assessment_date": "2023-07-30",
+    "responsible_party": "Security Operations Team",
+    "risk_rating": "medium",
+    "evidence": [
+      {
+        "evidence_id": "EVID-AU4-001",
+        "description": "Audit storage capacity configuration screenshots",
+        "evidence_type": "screenshot",
+        "collection_date": "2023-01-30",
+        "collected_by": "Robert Chen",
+        "document_location": "Compliance Repository ID: AU4-SCREEN-V1",
+        "review_status": "approved"
+      }
+    ],
+    "notes": "Adequate audit storage capacity confirmed on all critical systems"
+  },
+  {
+    "control_id": "SC-7",
+    "control_framework": "NIST 800-53",
+    "related_assets": [
+      "ASSET-005"
+    ],
+    "implementation_status": "compliant",
+    "implementation_date": "2020-08-15",
+    "last_assessment_date": "2023-02-20",
+    "next_assessment_date": "2023-08-20",
+    "responsible_party": "Network Security Team",
+    "risk_rating": "critical",
+    "evidence": [
+      {
+        "evidence_id": "EVID-SC7-001",
+        "description": "Boundary protection architecture diagram",
+        "evidence_type": "document",
+        "collection_date": "2023-02-20",
+        "collected_by": "Mark Wilson",
+        "document_location": "Compliance Repository ID: SC7-ARCH-V3",
+        "review_status": "approved"
+      },
+      {
+        "evidence_id": "EVID-SC7-002",
+        "description": "Firewall rule configuration export",
+        "evidence_type": "configuration",
+        "collection_date": "2023-02-20",
+        "collected_by": "Mark Wilson",
+        "document_location": "Compliance Repository ID: SC7-CONFIG-V2",
+        "review_status": "approved"
+      }
+    ],
+    "notes": "Boundary protection is implemented through multi-layer firewall approach"
+  }
+]

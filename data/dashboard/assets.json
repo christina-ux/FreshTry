@@ -1,0 +1,134 @@
+[
+  {
+    "asset_id": "ASSET-001",
+    "name": "Primary Web Server",
+    "type": "server",
+    "source": "ServiceNow CMDB",
+    "owner": "Web Operations Team",
+    "category": "production",
+    "status": "active",
+    "ip_addresses": [
+      "10.0.0.1",
+      "192.168.1.1"
+    ],
+    "hostname": "web-prod-01",
+    "os": "Ubuntu Linux",
+    "os_version": "20.04 LTS",
+    "location": "Primary Data Center",
+    "department": "IT Operations",
+    "data_classification": "internal",
+    "risk_level": "high",
+    "acquisition_date": "2022-03-15",
+    "last_updated": "2023-04-10T14:30:15",
+    "tags": [
+      "web",
+      "production",
+      "external"
+    ]
+  },
+  {
+    "asset_id": "ASSET-002",
+    "name": "Finance Department Workstation",
+    "type": "endpoint",
+    "source": "BigFix",
+    "owner": "Finance Department",
+    "category": "finance",
+    "status": "active",
+    "ip_addresses": [
+      "10.0.5.22"
+    ],
+    "hostname": "fin-ws-022",
+    "os": "Windows",
+    "os_version": "11 Pro",
+    "location": "Finance Office",
+    "department": "Finance",
+    "data_classification": "confidential",
+    "risk_level": "medium",
+    "acquisition_date": "2021-11-20",
+    "last_updated": "2023-03-28T09:15:30",
+    "tags": [
+      "finance",
+      "windows",
+      "endpoint"
+    ]
+  },
+  {
+    "asset_id": "ASSET-003",
+    "name": "Customer Database Server",
+    "type": "server",
+    "source": "Axonius",
+    "owner": "Database Administration",
+    "category": "production",
+    "status": "active",
+    "ip_addresses": [
+      "10.0.0.5"
+    ],
+    "hostname": "db-prod-01",
+    "os": "Red Hat Enterprise Linux",
+    "os_version": "9.0",
+    "location": "Primary Data Center",
+    "department": "IT Operations",
+    "data_classification": "restricted",
+    "risk_level": "critical",
+    "acquisition_date": "2022-01-10",
+    "last_updated": "2023-04-05T11:45:22",
+    "tags": [
+      "database",
+      "customer-data",
+      "production"
+    ]
+  },
+  {
+    "asset_id": "ASSET-004",
+    "name": "Marketing Laptop",
+    "type": "endpoint",
+    "source": "Jamf",
+    "owner": "Marketing Team",
+    "category": "marketing",
+    "status": "active",
+    "ip_addresses": [
+      "10.0.8.15"
+    ],
+    "hostname": "mkt-mbp-015",
+    "os": "macOS",
+    "os_version": "13.0",
+    "location": "Marketing Department",
+    "department": "Marketing",
+    "data_classification": "internal",
+    "risk_level": "low",
+    "acquisition_date": "2022-09-05",
+    "last_updated": "2023-04-01T16:20:45",
+    "tags": [
+      "marketing",
+      "macbook",
+      "laptop"
+    ]
+  },
+  {
+    "asset_id": "ASSET-005",
+    "name": "Network Firewall",
+    "type": "network_device",
+    "source": "ServiceNow CMDB",
+    "owner": "Network Security Team",
+    "category": "security",
+    "status": "active",
+    "ip_addresses": [
+      "10.0.0.254"
+    ],
+    "hostname": "fw-edge-01",
+    "os": "Cisco Firepower",
+    "os_version": "7.2",
+    "location": "Primary Data Center",
+    "department": "IT Security",
+    "data_classification": "confidential",
+    "risk_level": "critical",
+    "acquisition_date": "2020-07-22",
+    "last_updated": "2023-03-15T10:10:10",
+    "tags": [
+      "network",
+      "security",
+      "firewall",
+      "edge"
+    ]
+  }
+]

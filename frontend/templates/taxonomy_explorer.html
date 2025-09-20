@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolicyEdgeAI Taxonomy Explorer</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+  <!-- Add D3.js for visualizations -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    
+    #taxonomy-container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .taxonomy-section {
+      margin-bottom: 30px;
+    }
+    
+    .taxonomy-section h2 {
+      color: #3498db;
+      margin-bottom: 15px;
+    }
+    
+    .taxonomy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .taxonomy-card {
+      background-color: #f1f8fe;
+      border-left: 4px solid #3498db;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    .taxonomy-card h3 {
+      margin-top: 0;
+      color: #2980b9;
+    }
+    
+    .taxonomy-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 15px;
+    }
+    
+    .taxonomy-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #e9ecef;
+    }
+    
+    .taxonomy-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .taxonomy-list li strong {
+      color: #2c3e50;
+    }
+    
+    .taxonomy-list li .description {
+      font-size: 0.9em;
+      color: #7f8c8d;
+      display: block;
+      margin-top: 4px;
+    }
+    
+    #visualization {
+      height: 500px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 30px;
+    }
+    
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .filter-btn {
+      background-color: #e9ecef;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    
+    .filter-btn:hover {
+      background-color: #3498db;
+      color: white;
+    }
+    
+    .filter-btn.active {
+      background-color: #3498db;
+      color: white;
+    }
+    
+    .btn-primary {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s;
+    }
+    
+    .btn-primary:hover {
+      background-color: #2980b9;
+    }
+    
+    .tooltip {
+      position: absolute;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📘 PolicyEdgeAI Data Taxonomy Visual Explorer</h1>
+    <p class="lead">Explore and visualize metadata fields and relationships across the regulatory ingestion pipeline.</p>
+  </header>
+
+  <div id="taxonomy-container">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="metadata">Metadata</button>
+      <button class="filter-btn" data-filter="regulation">Regulation</button>
+      <button class="filter-btn" data-filter="compliance">Compliance</button>
+      <button class="filter-btn" data-filter="integration">Integration</button>
+    </div>
+
+    <div class="taxonomy-section">
+      <h2>Document and Source Taxonomy</h2>
+      <div class="taxonomy-grid">
+        <div class="taxonomy-card" data-category="metadata regulation">
+          <h3>Source Attributes</h3>
+          <ul class="taxonomy-list">
+            <li><strong>Source_Type</strong>: <span class="description">Regulation, Framework, Bulletin, Guidance, Standard</span></li>
+            <li><strong>Format_Type</strong>: <span class="description">PDF, HTML, XML, JSON, CSV, XLSX</span></li>
+            <li><strong>Source_Authority</strong>: <span class="description">Government, Industry Body, International Standard</span></li>
+            <li><strong>Publication_Date</strong>: <span class="description">When the source was officially published</span></li>
+            <li><strong>Effective_Date</strong>: <span class="description">When compliance requirements take effect</span></li>
+          </ul>
+        </div>
+        
+        <div class="taxonomy-card" data-category="metadata regulation">
+          <h3>Update Management</h3>
+          <ul class="taxonomy-list">
+            <li><strong>Update_Frequency</strong>: <span class="description">Daily, Weekly, Monthly, Quarterly, Yearly</span></li>
+            <li><strong>Last_Updated</strong>: <span class="description">Timestamp for most recent content changes</span></li>
+            <li><strong>Update_Type</strong>: <span class="description">Major, Minor, Patch, Clarification</span></li>
+            <li><strong>Version</strong>: <span class="description">Version identifier of the source document</span></li>
+            <li><strong>Changelog</strong>: <span class="description">Summary of changes from previous versions</span></li>
+          </ul>
+        </div>
+        
+        <div class="taxonomy-card" data-category="compliance">
+          <h3>Compliance Domain</h3>
+          <ul class="taxonomy-list">
+            <li><strong>Compliance_Domain</strong>: <span class="description">Privacy, Cybersecurity, AI, Finance, Healthcare</span></li>
+            <li><strong>Jurisdiction</strong>: <span class="description">Federal, State, International, Industry-Specific</span></li>
+            <li><strong>Applicability</strong>: <span class="description">Who must comply with these requirements</span></li>
+            <li><strong>Risk_Level</strong>: <span class="description">High, Medium, Low - impact of non-compliance</span></li>
+            <li><strong>Enforcement_Mechanism</strong>: <span class="description">Audit, Certification, Self-Assessment</span></li>
+          </ul>
+        </div>
+        
+        <div class="taxonomy-card" data-category="integration compliance">
+          <h3>Control Mapping</h3>
+          <ul class="taxonomy-list">
+            <li><strong>Mapped_Controls</strong>: <span class="description">Internal control references and IDs</span></li>
+            <li><strong>Control_Family</strong>: <span class="description">Access Control, Risk Assessment, Training</span></li>
+            <li><strong>Cross_Reference</strong>: <span class="description">Related controls in other frameworks</span></li>
+            <li><strong>Implementation_Level</strong>: <span class="description">Basic, Enhanced, Advanced requirements</span></li>
+            <li><strong>Evidence_Required</strong>: <span class="description">Documentation needed to prove compliance</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="taxonomy-section">
+      <h2>Content and Semantic Taxonomy</h2>
+      <div class="taxonomy-grid">
+        <div class="taxonomy-card" data-category="metadata integration">
+          <h3>Search and Discovery</h3>
+          <ul class="taxonomy-list">
+            <li><strong>Keywords_Tags</strong>: <span class="description">Used for semantic search & embeddings</span></li>
+            <li><strong>Classification</strong>: <span class="description">Public, Internal, Restricted, Confidential</span></li>
+            <li><strong>Content_Type</strong>: <span class="description">Requirement, Definition, Example, Guidance</span></li>
+            <li><strong>Target_Audience</strong>: <span class="description">Technical, Executive, Legal, General</span></li>
+            <li><strong>Language</strong>: <span class="description">Primary language of the content</span></li>
+          </ul>
+        </div>
+        
+        <div class="taxonomy-card" data-category="regulation compliance">
+          <h3>Requirement Structure</h3>
+          <ul class="taxonomy-list">
+            <li><strong>Requirement_Type</strong>: <span class="description">Mandatory, Recommended, Optional</span></li>
+            <li><strong>Measurement_Criteria</strong>: <span class="description">How compliance is measured</span></li>
+            <li><strong>Validation_Method</strong>: <span class="description">How to validate implementation</span></li>
+            <li><strong>Implementation_Timeline</strong>: <span class="description">Expected timeframe for implementation</span></li>
+            <li><strong>Exceptions</strong>: <span class="description">Conditions where requirements don't apply</span></li>
+          </ul>
+        </div>
+        
+        <div class="taxonomy-card" data-category="integration">
+          <h3>Technical Integration</h3>
+          <ul class="taxonomy-list">
+            <li><strong>API_Endpoint</strong>: <span class="description">APIs used to retrieve or update data</span></li>
+            <li><strong>Data_Format</strong>: <span class="description">JSON, XML, structured text formats</span></li>
+            <li><strong>Update_Method</strong>: <span class="description">Pull, Push, Webhook, Scheduled</span></li>
+            <li><strong>Authentication</strong>: <span class="description">API keys, OAuth, JWT requirements</span></li>
+            <li><strong>Rate_Limits</strong>: <span class="description">Usage restrictions and quotas</span></li>
+          </ul>
+        </div>
+        
+        <div class="taxonomy-card" data-category="compliance integration">
+          <h3>Assessment Data</h3>
+          <ul class="taxonomy-list">
+            <li><strong>Assessment_History</strong>: <span class="description">Previous assessment results</span></li>
+            <li><strong>Current_Status</strong>: <span class="description">Compliant, Non-Compliant, In Progress</span></li>
+            <li><strong>Gap_Analysis</strong>: <span class="description">Identified compliance gaps</span></li>
+            <li><strong>Remediation_Plan</strong>: <span class="description">Actions to address compliance gaps</span></li>
+            <li><strong>Next_Review</strong>: <span class="description">When compliance should be reassessed</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="visualization">
+    <h2>Interactive Taxonomy Visualization</h2>
+    <p>Explore relationships between different taxonomy elements:</p>
+    <div id="graph"></div>
+  </div>
+
+  <script>
+    // Filter functionality
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        const filter = this.getAttribute('data-filter');
+        
+        // Show/hide cards based on filter
+        document.querySelectorAll('.taxonomy-card').forEach(card => {
+          if (filter === 'all') {
+            card.style.display = 'block';
+          } else {
+            if (card.getAttribute('data-category').includes(filter)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+
+    // D3.js visualization
+    document.addEventListener('DOMContentLoaded', function() {
+      // Sample data structure for the visualization
+      const data = {
+        nodes: [
+          // Core taxonomy categories
+          { id: "source", group: 1, label: "Source Attributes", size: 20 },
+          { id: "update", group: 1, label: "Update Management", size: 20 },
+          { id: "compliance", group: 2, label: "Compliance Domain", size: 20 },
+          { id: "control", group: 2, label: "Control Mapping", size: 20 },
+          { id: "search", group: 3, label: "Search and Discovery", size: 20 },
+          { id: "requirement", group: 3, label: "Requirement Structure", size: 20 },
+          { id: "technical", group: 4, label: "Technical Integration", size: 20 },
+          { id: "assessment", group: 4, label: "Assessment Data", size: 20 },
+          
+          // Selected fields
+          { id: "source_type", group: 1, label: "Source_Type", size: 15 },
+          { id: "format_type", group: 1, label: "Format_Type", size: 15 },
+          { id: "update_frequency", group: 1, label: "Update_Frequency", size: 15 },
+          { id: "compliance_domain", group: 2, label: "Compliance_Domain", size: 15 },
+          { id: "jurisdiction", group: 2, label: "Jurisdiction", size: 15 },
+          { id: "mapped_controls", group: 2, label: "Mapped_Controls", size: 15 },
+          { id: "keywords", group: 3, label: "Keywords_Tags", size: 15 },
+          { id: "requirement_type", group: 3, label: "Requirement_Type", size: 15 },
+          { id: "api_endpoint", group: 4, label: "API_Endpoint", size: 15 },
+          { id: "current_status", group: 4, label: "Current_Status", size: 15 }
+        ],
+        links: [
+          // Connections between categories
+          { source: "source", target: "update", value: 5 },
+          { source: "source", target: "compliance", value: 3 },
+          { source: "compliance", target: "control", value: 5 },
+          { source: "control", target: "requirement", value: 4 },
+          { source: "search", target: "requirement", value: 3 },
+          { source: "technical", target: "assessment", value: 4 },
+          { source: "control", target: "assessment", value: 5 },
+          
+          // Connections to fields
+          { source: "source", target: "source_type", value: 2 },
+          { source: "source", target: "format_type", value: 2 },
+          { source: "update", target: "update_frequency", value: 2 },
+          { source: "compliance", target: "compliance_domain", value: 2 },
+          { source: "compliance", target: "jurisdiction", value: 2 },
+          { source: "control", target: "mapped_controls", value: 2 },
+          { source: "search", target: "keywords", value: 2 },
+          { source: "requirement", target: "requirement_type", value: 2 },
+          { source: "technical", target: "api_endpoint", value: 2 },
+          { source: "assessment", target: "current_status", value: 2 },
+          
+          // Cross-category relationships
+          { source: "source_type", target: "compliance_domain", value: 1 },
+          { source: "format_type", target: "api_endpoint", value: 1 },
+          { source: "keywords", target: "mapped_controls", value: 1 },
+          { source: "requirement_type", target: "current_status", value: 1 },
+          { source: "jurisdiction", target: "requirement_type", value: 1 }
+        ]
+      };
+      
+      // Create visualization
+      const width = document.getElementById("graph").clientWidth || 800;
+      const height = 450;
+      
+      // Create SVG
+      const svg = d3.select("#graph")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+        
+      // Add tooltip
+      const tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip");
+        
+      // Create force simulation
+      const simulation = d3.forceSimulation(data.nodes)
+        .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
+        .force("charge", d3.forceManyBody().strength(-200))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collision", d3.forceCollide().radius(30));
+        
+      // Create color scale
+      const color = d3.scaleOrdinal(d3.schemeCategory10);
+      
+      // Add links
+      const link = svg.append("g")
+        .selectAll("line")
+        .data(data.links)
+        .enter()
+        .append("line")
+        .attr("stroke", "#999")
+        .attr("stroke-opacity", 0.6)
+        .attr("stroke-width", d => Math.sqrt(d.value));
+        
+      // Add nodes
+      const node = svg.append("g")
+        .selectAll("circle")
+        .data(data.nodes)
+        .enter()
+        .append("circle")
+        .attr("r", d => d.size)
+        .attr("fill", d => color(d.group))
+        .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+          
+      // Add labels
+      const label = svg.append("g")
+        .selectAll("text")
+        .data(data.nodes)
+        .enter()
+        .append("text")
+        .text(d => d.label)
+        .attr("font-size", 10)
+        .attr("dx", 15)
+        .attr("dy", 4);
+        
+      // Add tooltip behavior  
+      node.on("mouseover", function(event, d) {
+        tooltip.transition()
+          .duration(200)
+          .style("opacity", .9);
+        tooltip.html(d.label)
+          .style("left", (event.pageX + 10) + "px")
+          .style("top", (event.pageY - 28) + "px");
+      })
+      .on("mouseout", function() {
+        tooltip.transition()
+          .duration(500)
+          .style("opacity", 0);
+      });
+      
+      // Update positions
+      simulation.on("tick", () => {
+        link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+        
+        node
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y);
+          
+        label
+          .attr("x", d => d.x)
+          .attr("y", d => d.y);
+      });
+      
+      // Drag functions
+      function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+      
+      function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+      }
+      
+      function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+    });
+  </script>
+</body>
+</html>

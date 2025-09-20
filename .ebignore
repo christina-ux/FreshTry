@@ -1,0 +1,49 @@
+# Ignore development and version control files
+.git
+.gitignore
+.env
+.venv
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ignore Docker files except Dockerrun.aws.json
+.dockerignore
+api.Dockerfile
+dashboard.Dockerfile
+
+# Ignore AWS deployment files not needed for EB
+aws/
+.github/
+
+# Ignore test directories
+tests/
+test/
+
+# Ignore logs and data
+logs/
+data/uploads/
+data/reports/
+
+# Ignore documentation
+*.md
+!README.md
+docs/

@@ -1,0 +1,119 @@
+[
+  {
+    "score_id": "SCORE-NIST-2025Q1",
+    "framework": "NIST 800-53",
+    "score_date": "2025-04-02",
+    "overall_score": 87.3,
+    "metrics": [
+      {
+        "metric_id": "METRIC-001",
+        "name": "Control Implementation Rate",
+        "value": 92.5,
+        "weight": 0.3,
+        "weighted_score": 27.75
+      },
+      {
+        "metric_id": "METRIC-002",
+        "name": "Evidence Quality",
+        "value": 85.0,
+        "weight": 0.2,
+        "weighted_score": 17.0
+      },
+      {
+        "metric_id": "METRIC-003",
+        "name": "Assessment Coverage",
+        "value": 90.0,
+        "weight": 0.25,
+        "weighted_score": 22.5
+      },
+      {
+        "metric_id": "METRIC-004",
+        "name": "Risk Remediation",
+        "value": 80.2,
+        "weight": 0.25,
+        "weighted_score": 20.05
+      }
+    ],
+    "previous_score": 84.1,
+    "trend": "improving",
+    "notes": "Significant improvement in control implementation rate this quarter"
+  },
+  {
+    "score_id": "SCORE-NIST-2025Q4",
+    "framework": "NIST 800-53",
+    "score_date": "2025-01-02",
+    "overall_score": 84.1,
+    "metrics": [
+      {
+        "metric_id": "METRIC-001",
+        "name": "Control Implementation Rate",
+        "value": 88.2,
+        "weight": 0.3,
+        "weighted_score": 26.46
+      },
+      {
+        "metric_id": "METRIC-002",
+        "name": "Evidence Quality",
+        "value": 82.5,
+        "weight": 0.2,
+        "weighted_score": 16.5
+      },
+      {
+        "metric_id": "METRIC-003",
+        "name": "Assessment Coverage",
+        "value": 87.0,
+        "weight": 0.25,
+        "weighted_score": 21.75
+      },
+      {
+        "metric_id": "METRIC-004",
+        "name": "Risk Remediation",
+        "value": 77.6,
+        "weight": 0.25,
+        "weighted_score": 19.4
+      }
+    ],
+    "previous_score": 80.3,
+    "trend": "improving",
+    "notes": "Continued improvement across all metrics"
+  },
+  {
+    "score_id": "SCORE-HIPAA-2025Q1",
+    "framework": "HIPAA",
+    "score_date": "2025-04-02",
+    "overall_score": 91.7,
+    "metrics": [
+      {
+        "metric_id": "METRIC-001",
+        "name": "Control Implementation Rate",
+        "value": 95.0,
+        "weight": 0.3,
+        "weighted_score": 28.5
+      },
+      {
+        "metric_id": "METRIC-002",
+        "name": "Evidence Quality",
+        "value": 90.0,
+        "weight": 0.2,
+        "weighted_score": 18.0
+      },
+      {
+        "metric_id": "METRIC-003",
+        "name": "Assessment Coverage",
+        "value": 92.0,
+        "weight": 0.25,
+        "weighted_score": 23.0
+      },
+      {
+        "metric_id": "METRIC-004",
+        "name": "Risk Remediation",
+        "value": 88.8,
+        "weight": 0.25,
+        "weighted_score": 22.2
+      }
+    ],
+    "previous_score": 89.5,
+    "trend": "improving",
+    "notes": "Strong compliance posture for HIPAA requirements"
+  }
+]

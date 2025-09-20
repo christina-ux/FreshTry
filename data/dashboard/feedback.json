@@ -1,0 +1,50 @@
+[
+  {
+    "feedback_id": "FB-2023-001",
+    "user_id": "user.smith",
+    "feedback_date": "2023-03-15T14:22:30",
+    "feedback_type": "suggestion",
+    "feature": "regulatory mapping",
+    "satisfaction_rating": 4,
+    "usability_rating": 3,
+    "feedback_text": "The evidence upload feature is useful but would benefit from batch upload capability.",
+    "resolution_status": "planned",
+    "resolution_notes": "Batch upload planned for Q3 2023 release"
+  },
+  {
+    "feedback_id": "FB-2023-002",
+    "user_id": "user.johnson",
+    "feedback_date": "2023-03-18T09:45:12",
+    "feedback_type": "issue",
+    "feature": "dashboard",
+    "satisfaction_rating": 2,
+    "usability_rating": 2,
+    "feedback_text": "The compliance score visualization is not updating in real-time when new evidence is added.",
+    "resolution_status": "resolved",
+    "resolution_notes": "Fixed in hotfix 2023.3.1"
+  },
+  {
+    "feedback_id": "FB-2023-003",
+    "user_id": "user.williams",
+    "feedback_date": "2023-03-22T11:30:45",
+    "feedback_type": "praise",
+    "feature": "reporting",
+    "satisfaction_rating": 5,
+    "usability_rating": 5,
+    "feedback_text": "The new export to PDF feature for compliance reports is excellent and saves a lot of time!",
+    "resolution_status": "acknowledged",
+    "resolution_notes": "Thanked user for feedback"
+  },
+  {
+    "feedback_id": "FB-2023-004",
+    "user_id": "user.chen",
+    "feedback_date": "2023-03-25T16:15:33",
+    "feedback_type": "suggestion",
+    "feature": "integration",
+    "satisfaction_rating": 3,
+    "usability_rating": 4,
+    "feedback_text": "Would like to see integration with our GRC tool to avoid duplicate data entry.",
+    "resolution_status": "under_review",
+    "resolution_notes": "Evaluating integration options with popular GRC tools"
+  }
+]

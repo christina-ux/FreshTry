@@ -1,0 +1,42 @@
+[
+  {
+    "metric_id": "METRIC-001",
+    "name": "Control Implementation Rate",
+    "description": "Percentage of applicable controls that are fully implemented",
+    "weight": 0.3,
+    "calculation_method": "implemented_controls / applicable_controls * 100",
+    "target_value": 95.0,
+    "threshold_warning": 85.0,
+    "threshold_critical": 75.0
+  },
+  {
+    "metric_id": "METRIC-002",
+    "name": "Evidence Quality",
+    "description": "Rating of evidence quality and completeness",
+    "weight": 0.2,
+    "calculation_method": "sum(evidence_ratings) / count(evidence) * 100",
+    "target_value": 90.0,
+    "threshold_warning": 80.0,
+    "threshold_critical": 70.0
+  },
+  {
+    "metric_id": "METRIC-003",
+    "name": "Assessment Coverage",
+    "description": "Percentage of controls assessed within required timeframe",
+    "weight": 0.25,
+    "calculation_method": "assessed_controls / total_controls * 100",
+    "target_value": 100.0,
+    "threshold_warning": 90.0,
+    "threshold_critical": 80.0
+  },
+  {
+    "metric_id": "METRIC-004",
+    "name": "Risk Remediation",
+    "description": "Percentage of identified risks remediated within SLA",
+    "weight": 0.25,
+    "calculation_method": "remediated_risks / identified_risks * 100",
+    "target_value": 90.0,
+    "threshold_warning": 80.0,
+    "threshold_critical": 70.0
+  }
+]

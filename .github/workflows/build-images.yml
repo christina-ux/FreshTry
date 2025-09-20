@@ -1,0 +1,112 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.gitignore'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment tag'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
+
+env:
+  AWS_REGION: us-east-2  # Match your current AWS region
+  ECR_REPOSITORY_API: policyedgeai-api
+  ECR_REPOSITORY_DASHBOARD: policyedgeai-dashboard
+  PYTHON_VERSION: '3.9'
+
+jobs:
+  build-and-push:
+    name: Build and Push Images
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+      
+      - name: Setup environment variables
+        id: env
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "ENVIRONMENT=${{ github.event.inputs.environment }}" >> $GITHUB_ENV
+          else
+            echo "ENVIRONMENT=dev" >> $GITHUB_ENV
+          fi
+          echo "BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+          echo "COMMIT_HASH=${GITHUB_SHA:0:8}" >> $GITHUB_ENV
+          echo "GITHUB_REPOSITORY_OWNER=$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+      
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      # Build and push API image
+      - name: Build API image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./api.Dockerfile
+          push: true
+          tags: |
+            ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_API }}:latest
+            ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_API }}:${{ env.COMMIT_HASH }}
+            ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_API }}:${{ env.ENVIRONMENT }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          build-args: |
+            GITHUB_SHA=${{ github.sha }}
+            GITHUB_REF=${{ github.ref }}
+            BUILD_DATE=${{ env.BUILD_DATE }}
+            GITHUB_REPOSITORY_OWNER=${{ env.GITHUB_REPOSITORY_OWNER }}
+      
+      # Build and push Dashboard image
+      - name: Build Dashboard image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./dashboard.Dockerfile
+          push: true
+          tags: |
+            ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_DASHBOARD }}:latest
+            ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_DASHBOARD }}:${{ env.COMMIT_HASH }}
+            ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_DASHBOARD }}:${{ env.ENVIRONMENT }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          build-args: |
+            GITHUB_SHA=${{ github.sha }}
+            GITHUB_REF=${{ github.ref }}
+            BUILD_DATE=${{ env.BUILD_DATE }}
+            GITHUB_REPOSITORY_OWNER=${{ env.GITHUB_REPOSITORY_OWNER }}
+      
+      # Create deployment summary
+      - name: Generate build summary
+        run: |
+          echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "Environment: ${{ env.ENVIRONMENT }}" >> $GITHUB_STEP_SUMMARY
+          echo "Commit: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "API Image: ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_API }}:${{ env.COMMIT_HASH }}" >> $GITHUB_STEP_SUMMARY
+          echo "Dashboard Image: ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_DASHBOARD }}:${{ env.COMMIT_HASH }}" >> $GITHUB_STEP_SUMMARY
+          echo "Built at: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_STEP_SUMMARY
