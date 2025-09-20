@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "sample_0_1758185959",
+    "title": "Supply Chain Disruption Threatens Tech Manufacturing",
+    "content": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare earth element availability.",
+    "summary": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare ...",
+    "source": "rss_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.6449826942315616,
+    "impact_score": 5.241262900255499,
+    "urgency_score": 3.0897398600895687,
+    "risk_score": 4.834978398260748,
+    "timestamp": "2025-09-18 08:59:19.391184",
+    "tags": [
+      "supply_chain",
+      "semiconductors",
+      "manufacturing",
+      "geopolitical"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/0",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391211"
+    }
+  },
+  {
+    "id": "sample_1_1758327919",
+    "title": "Federal Reserve Signals Emergency Rate Decision",
+    "content": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased significantly in pre-market trading.",
+    "summary": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased sign...",
+    "source": "rss_feeds",
+    "category": "market_shock",
+    "confidence_score": 0.7494714317163604,
+    "impact_score": 9.331804209327078,
+    "urgency_score": 2.7725054569177576,
+    "risk_score": 5.306403841133417,
+    "timestamp": "2025-09-20 00:25:19.391242",
+    "tags": [
+      "federal_reserve",
+      "interest_rates",
+      "inflation",
+      "markets"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/1",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391254"
+    }
+  },
+  {
+    "id": "sample_2_1757951419",
+    "title": "Cryptocurrency Market Faces Massive Selloff",
+    "content": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reached historic highs.",
+    "summary": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reache...",
+    "source": "rss_feeds",
+    "category": "market_shock",
+    "confidence_score": 0.6814978497578724,
+    "impact_score": 7.805907182617458,
+    "urgency_score": 8.69154145555558,
+    "risk_score": 2.1475695563107053,
+    "timestamp": "2025-09-15 15:50:19.391266",
+    "tags": [
+      "cryptocurrency",
+      "bitcoin",
+      "regulation",
+      "trading"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/2",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391274"
+    }
+  },
+  {
+    "id": "sample_3_1757964499",
+    "title": "Federal Reserve Signals Emergency Rate Decision",
+    "content": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased significantly in pre-market trading.",
+    "summary": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased sign...",
+    "source": "tripwire_alerts",
+    "category": "market_shock",
+    "confidence_score": 0.9131880999947809,
+    "impact_score": 8.285630122734503,
+    "urgency_score": 3.8097802844304773,
+    "risk_score": 7.093712425874525,
+    "timestamp": "2025-09-15 19:28:19.391283",
+    "tags": [
+      "federal_reserve",
+      "interest_rates",
+      "inflation",
+      "markets"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/3",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391291"
+    }
+  },
+  {
+    "id": "sample_4_1758277099",
+    "title": "GDPR-Style Privacy Law Proposed for US Markets",
+    "content": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms for all US companies.",
+    "summary": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms ...",
+    "source": "tripwire_alerts",
+    "category": "regulatory_change",
+    "confidence_score": 0.7178971509789811,
+    "impact_score": 5.114491052278146,
+    "urgency_score": 4.946630405343452,
+    "risk_score": 4.7221959435502345,
+    "timestamp": "2025-09-19 10:18:19.391299",
+    "tags": [
+      "privacy",
+      "GDPR",
+      "legislation",
+      "data_protection"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/4",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391307"
+    }
+  },
+  {
+    "id": "sample_5_1758260179",
+    "title": "Supply Chain Disruption Threatens Tech Manufacturing",
+    "content": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare earth element availability.",
+    "summary": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare ...",
+    "source": "regulatory_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.6259231059594269,
+    "impact_score": 5.867361587233763,
+    "urgency_score": 8.696297348964201,
+    "risk_score": 6.416750029083876,
+    "timestamp": "2025-09-19 05:36:19.391314",
+    "tags": [
+      "supply_chain",
+      "semiconductors",
+      "manufacturing",
+      "geopolitical"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/5",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391321"
+    }
+  },
+  {
+    "id": "sample_6_1757740219",
+    "title": "Critical Infrastructure Vulnerability Discovered",
+    "content": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water treatment facilities.",
+    "summary": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water ...",
+    "source": "web_scraping",
+    "category": "risk_exposure",
+    "confidence_score": 0.9207489463670785,
+    "impact_score": 4.266471640132684,
+    "urgency_score": 3.168716753065262,
+    "risk_score": 7.916307613241667,
+    "timestamp": "2025-09-13 05:10:19.391328",
+    "tags": [
+      "cybersecurity",
+      "infrastructure",
+      "vulnerability",
+      "industrial"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/6",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391335"
+    }
+  },
+  {
+    "id": "sample_7_1758011779",
+    "title": "Google Achieves Quantum AI Breakthrough",
+    "content": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discovery and financial modeling.",
+    "summary": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discov...",
+    "source": "regulatory_feeds",
+    "category": "ai_development",
+    "confidence_score": 0.9511597930501855,
+    "impact_score": 4.528921347050183,
+    "urgency_score": 8.684007069931607,
+    "risk_score": 2.8546454040736156,
+    "timestamp": "2025-09-16 08:36:19.391342",
+    "tags": [
+      "Google",
+      "quantum",
+      "AI",
+      "machine_learning"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/7",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391348"
+    }
+  },
+  {
+    "id": "sample_8_1757947759",
+    "title": "Google Achieves Quantum AI Breakthrough",
+    "content": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discovery and financial modeling.",
+    "summary": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discov...",
+    "source": "regulatory_feeds",
+    "category": "ai_development",
+    "confidence_score": 0.9635261416983679,
+    "impact_score": 4.744298835686385,
+    "urgency_score": 4.848672327529748,
+    "risk_score": 6.515248948478931,
+    "timestamp": "2025-09-15 14:49:19.391355",
+    "tags": [
+      "Google",
+      "quantum",
+      "AI",
+      "machine_learning"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/8",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391361"
+    }
+  },
+  {
+    "id": "sample_9_1757962759",
+    "title": "Critical Infrastructure Vulnerability Discovered",
+    "content": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water treatment facilities.",
+    "summary": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water ...",
+    "source": "tripwire_alerts",
+    "category": "risk_exposure",
+    "confidence_score": 0.6081558207545571,
+    "impact_score": 3.96983439945592,
+    "urgency_score": 5.886145526009975,
+    "risk_score": 5.731535603290635,
+    "timestamp": "2025-09-15 18:59:19.391369",
+    "tags": [
+      "cybersecurity",
+      "infrastructure",
+      "vulnerability",
+      "industrial"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/9",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391375"
+    }
+  },
+  {
+    "id": "sample_10_1758207859",
+    "title": "GDPR-Style Privacy Law Proposed for US Markets",
+    "content": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms for all US companies.",
+    "summary": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms ...",
+    "source": "rss_feeds",
+    "category": "regulatory_change",
+    "confidence_score": 0.959845897693061,
+    "impact_score": 4.357729135621374,
+    "urgency_score": 8.679153246914673,
+    "risk_score": 1.313287092730472,
+    "timestamp": "2025-09-18 15:04:19.391382",
+    "tags": [
+      "privacy",
+      "GDPR",
+      "legislation",
+      "data_protection"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/10",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391388"
+    }
+  },
+  {
+    "id": "sample_11_1758317419",
+    "title": "Tech Stocks Plunge 15% Following AI Regulation Announcement",
+    "content": "Major technology stocks experienced significant decline after new AI regulation framework was announced by federal authorities. The proposed regulations would require extensive compliance reporting for AI systems.",
+    "summary": "Major technology stocks experienced significant decline after new AI regulation framework was announced by federal authorities. The proposed regulatio...",
+    "source": "rss_feeds",
+    "category": "market_shock",
+    "confidence_score": 0.7870055577815308,
+    "impact_score": 4.048691636574366,
+    "urgency_score": 7.6312744257577725,
+    "risk_score": 4.746645273876201,
+    "timestamp": "2025-09-19 21:30:19.391394",
+    "tags": [
+      "technology",
+      "stocks",
+      "AI",
+      "regulation"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/11",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391401"
+    }
+  },
+  {
+    "id": "sample_12_1758186979",
+    "title": "SEC Announces New AI Disclosure Requirements",
+    "content": "Securities and Exchange Commission issued comprehensive guidelines requiring public companies to disclose AI system usage, risks, and governance frameworks in quarterly reports.",
+    "summary": "Securities and Exchange Commission issued comprehensive guidelines requiring public companies to disclose AI system usage, risks, and governance frame...",
+    "source": "regulatory_feeds",
+    "category": "regulatory_change",
+    "confidence_score": 0.9492997209009366,
+    "impact_score": 5.380886464539922,
+    "urgency_score": 6.816900780330663,
+    "risk_score": 6.756386115910247,
+    "timestamp": "2025-09-18 09:16:19.391408",
+    "tags": [
+      "SEC",
+      "AI",
+      "disclosure",
+      "compliance"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/12",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391414"
+    }
+  },
+  {
+    "id": "sample_13_1758225919",
+    "title": "Congressional AI Safety Hearing Reveals Bipartisan Concerns",
+    "content": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon systems and election security.",
+    "summary": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon syst...",
+    "source": "rss_feeds",
+    "category": "political_event",
+    "confidence_score": 0.7556733711509798,
+    "impact_score": 7.736401614529377,
+    "urgency_score": 2.488658189525533,
+    "risk_score": 5.639807977741519,
+    "timestamp": "2025-09-18 20:05:19.391421",
+    "tags": [
+      "Congress",
+      "AI_safety",
+      "weapons",
+      "elections"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/13",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391427"
+    }
+  },
+  {
+    "id": "sample_14_1757728699",
+    "title": "GDPR-Style Privacy Law Proposed for US Markets",
+    "content": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms for all US companies.",
+    "summary": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms ...",
+    "source": "regulatory_feeds",
+    "category": "regulatory_change",
+    "confidence_score": 0.8837754461115311,
+    "impact_score": 7.206581508435146,
+    "urgency_score": 4.65519261920505,
+    "risk_score": 4.054390543174426,
+    "timestamp": "2025-09-13 01:58:19.391433",
+    "tags": [
+      "privacy",
+      "GDPR",
+      "legislation",
+      "data_protection"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/14",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391439"
+    }
+  },
+  {
+    "id": "sample_15_1757816299",
+    "title": "Congressional AI Safety Hearing Reveals Bipartisan Concerns",
+    "content": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon systems and election security.",
+    "summary": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon syst...",
+    "source": "rss_feeds",
+    "category": "political_event",
+    "confidence_score": 0.7693588385217778,
+    "impact_score": 6.392110636713776,
+    "urgency_score": 8.077262476085693,
+    "risk_score": 1.8764538661573793,
+    "timestamp": "2025-09-14 02:18:19.391446",
+    "tags": [
+      "Congress",
+      "AI_safety",
+      "weapons",
+      "elections"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/15",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391452"
+    }
+  },
+  {
+    "id": "sample_16_1757881939",
+    "title": "Critical Infrastructure Vulnerability Discovered",
+    "content": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water treatment facilities.",
+    "summary": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water ...",
+    "source": "regulatory_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.7633647152238968,
+    "impact_score": 9.708491973574334,
+    "urgency_score": 2.554465645760951,
+    "risk_score": 3.080787001001726,
+    "timestamp": "2025-09-14 20:32:19.391458",
+    "tags": [
+      "cybersecurity",
+      "infrastructure",
+      "vulnerability",
+      "industrial"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/16",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391464"
+    }
+  },
+  {
+    "id": "sample_17_1757794699",
+    "title": "Google Achieves Quantum AI Breakthrough",
+    "content": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discovery and financial modeling.",
+    "summary": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discov...",
+    "source": "tripwire_alerts",
+    "category": "ai_development",
+    "confidence_score": 0.7108065673954417,
+    "impact_score": 8.347260569078523,
+    "urgency_score": 7.024695734563632,
+    "risk_score": 1.3062470722236248,
+    "timestamp": "2025-09-13 20:18:19.391471",
+    "tags": [
+      "Google",
+      "quantum",
+      "AI",
+      "machine_learning"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/17",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391477"
+    }
+  },
+  {
+    "id": "sample_18_1757964619",
+    "title": "Supply Chain Disruption Threatens Tech Manufacturing",
+    "content": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare earth element availability.",
+    "summary": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare ...",
+    "source": "regulatory_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.9809888648044198,
+    "impact_score": 9.251893442277316,
+    "urgency_score": 4.075517124894694,
+    "risk_score": 5.984439063487063,
+    "timestamp": "2025-09-15 19:30:19.391484",
+    "tags": [
+      "supply_chain",
+      "semiconductors",
+      "manufacturing",
+      "geopolitical"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/18",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391490"
+    }
+  },
+  {
+    "id": "sample_19_1758020119",
+    "title": "Supply Chain Disruption Threatens Tech Manufacturing",
+    "content": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare earth element availability.",
+    "summary": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare ...",
+    "source": "web_scraping",
+    "category": "risk_exposure",
+    "confidence_score": 0.9031153145201113,
+    "impact_score": 5.575309407977173,
+    "urgency_score": 8.222002241862553,
+    "risk_score": 1.4178300728704616,
+    "timestamp": "2025-09-16 10:55:19.391496",
+    "tags": [
+      "supply_chain",
+      "semiconductors",
+      "manufacturing",
+      "geopolitical"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/19",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391502"
+    }
+  },
+  {
+    "id": "sample_20_1757929519",
+    "title": "Microsoft Integrates Advanced AI into Enterprise Software",
+    "content": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predictive analytics.",
+    "summary": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predicti...",
+    "source": "web_scraping",
+    "category": "ai_development",
+    "confidence_score": 0.8892000068157017,
+    "impact_score": 4.214172015210206,
+    "urgency_score": 7.970256039123087,
+    "risk_score": 7.288551032284973,
+    "timestamp": "2025-09-15 09:45:19.391509",
+    "tags": [
+      "Microsoft",
+      "enterprise",
+      "Office365",
+      "automation"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/20",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391515"
+    }
+  },
+  {
+    "id": "sample_21_1757901379",
+    "title": "Supply Chain Disruption Threatens Tech Manufacturing",
+    "content": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare earth element availability.",
+    "summary": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare ...",
+    "source": "rss_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.6156801895162715,
+    "impact_score": 6.303231704356502,
+    "urgency_score": 7.915657804172249,
+    "risk_score": 7.349271233956882,
+    "timestamp": "2025-09-15 01:56:19.391521",
+    "tags": [
+      "supply_chain",
+      "semiconductors",
+      "manufacturing",
+      "geopolitical"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/21",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391528"
+    }
+  },
+  {
+    "id": "sample_22_1758275539",
+    "title": "SEC Announces New AI Disclosure Requirements",
+    "content": "Securities and Exchange Commission issued comprehensive guidelines requiring public companies to disclose AI system usage, risks, and governance frameworks in quarterly reports.",
+    "summary": "Securities and Exchange Commission issued comprehensive guidelines requiring public companies to disclose AI system usage, risks, and governance frame...",
+    "source": "web_scraping",
+    "category": "regulatory_change",
+    "confidence_score": 0.7118902454841414,
+    "impact_score": 4.009940444504441,
+    "urgency_score": 3.582226250479262,
+    "risk_score": 3.648308572752164,
+    "timestamp": "2025-09-19 09:52:19.391535",
+    "tags": [
+      "SEC",
+      "AI",
+      "disclosure",
+      "compliance"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/22",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391541"
+    }
+  },
+  {
+    "id": "sample_23_1757922379",
+    "title": "Microsoft Integrates Advanced AI into Enterprise Software",
+    "content": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predictive analytics.",
+    "summary": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predicti...",
+    "source": "rss_feeds",
+    "category": "ai_development",
+    "confidence_score": 0.692098062281846,
+    "impact_score": 8.804128568394518,
+    "urgency_score": 6.455529367513783,
+    "risk_score": 3.4968891005888487,
+    "timestamp": "2025-09-15 07:46:19.391547",
+    "tags": [
+      "Microsoft",
+      "enterprise",
+      "Office365",
+      "automation"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/23",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391553"
+    }
+  },
+  {
+    "id": "sample_24_1758351559",
+    "title": "Cryptocurrency Market Faces Massive Selloff",
+    "content": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reached historic highs.",
+    "summary": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reache...",
+    "source": "web_scraping",
+    "category": "market_shock",
+    "confidence_score": 0.7160406218793496,
+    "impact_score": 3.7319676352603626,
+    "urgency_score": 3.2295619054819027,
+    "risk_score": 5.64466796715481,
+    "timestamp": "2025-09-20 06:59:19.391560",
+    "tags": [
+      "cryptocurrency",
+      "bitcoin",
+      "regulation",
+      "trading"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/24",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391566"
+    }
+  },
+  {
+    "id": "sample_25_1758281839",
+    "title": "Google Achieves Quantum AI Breakthrough",
+    "content": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discovery and financial modeling.",
+    "summary": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discov...",
+    "source": "web_scraping",
+    "category": "ai_development",
+    "confidence_score": 0.7414591157554209,
+    "impact_score": 8.962208350475219,
+    "urgency_score": 5.79601501132754,
+    "risk_score": 1.9810513042823743,
+    "timestamp": "2025-09-19 11:37:19.391573",
+    "tags": [
+      "Google",
+      "quantum",
+      "AI",
+      "machine_learning"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/25",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391580"
+    }
+  },
+  {
+    "id": "sample_26_1758072559",
+    "title": "OpenAI Releases GPT-5 with Revolutionary Capabilities",
+    "content": "OpenAI unveiled GPT-5, demonstrating unprecedented reasoning abilities and multimodal processing. The model shows significant improvements in scientific research and complex problem-solving.",
+    "summary": "OpenAI unveiled GPT-5, demonstrating unprecedented reasoning abilities and multimodal processing. The model shows significant improvements in scientif...",
+    "source": "rss_feeds",
+    "category": "ai_development",
+    "confidence_score": 0.7903056344805246,
+    "impact_score": 6.596611335904155,
+    "urgency_score": 7.190609362181136,
+    "risk_score": 7.225511114785094,
+    "timestamp": "2025-09-17 01:29:19.391586",
+    "tags": [
+      "OpenAI",
+      "GPT-5",
+      "AI",
+      "breakthrough"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/26",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391593"
+    }
+  },
+  {
+    "id": "sample_27_1758317539",
+    "title": "Supply Chain Disruption Threatens Tech Manufacturing",
+    "content": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare earth element availability.",
+    "summary": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare ...",
+    "source": "regulatory_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.6292274392380397,
+    "impact_score": 8.180995447062024,
+    "urgency_score": 4.91929946817733,
+    "risk_score": 6.587727698939765,
+    "timestamp": "2025-09-19 21:32:19.391600",
+    "tags": [
+      "supply_chain",
+      "semiconductors",
+      "manufacturing",
+      "geopolitical"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/27",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391607"
+    }
+  },
+  {
+    "id": "sample_28_1757917339",
+    "title": "Supply Chain Disruption Threatens Tech Manufacturing",
+    "content": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare earth element availability.",
+    "summary": "Geopolitical tensions and natural disasters converged to create unprecedented supply chain disruptions, particularly affecting semiconductor and rare ...",
+    "source": "rss_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.872875411372035,
+    "impact_score": 7.745949460544399,
+    "urgency_score": 8.633865369386438,
+    "risk_score": 7.807561542208914,
+    "timestamp": "2025-09-15 06:22:19.391613",
+    "tags": [
+      "supply_chain",
+      "semiconductors",
+      "manufacturing",
+      "geopolitical"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/28",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391619"
+    }
+  },
+  {
+    "id": "sample_29_1758274759",
+    "title": "International AI Governance Summit Reaches Key Agreements",
+    "content": "G7 nations signed preliminary agreement on international AI governance standards, establishing framework for cross-border AI system oversight and ethical guidelines.",
+    "summary": "G7 nations signed preliminary agreement on international AI governance standards, establishing framework for cross-border AI system oversight and ethi...",
+    "source": "web_scraping",
+    "category": "political_event",
+    "confidence_score": 0.9109162030078988,
+    "impact_score": 7.195179269306996,
+    "urgency_score": 6.301706920535266,
+    "risk_score": 5.526095554944576,
+    "timestamp": "2025-09-19 09:39:19.391626",
+    "tags": [
+      "G7",
+      "international",
+      "governance",
+      "ethics"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/29",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391632"
+    }
+  },
+  {
+    "id": "sample_30_1758194059",
+    "title": "Congressional AI Safety Hearing Reveals Bipartisan Concerns",
+    "content": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon systems and election security.",
+    "summary": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon syst...",
+    "source": "web_scraping",
+    "category": "political_event",
+    "confidence_score": 0.9609634183127551,
+    "impact_score": 4.458364116612467,
+    "urgency_score": 7.3076833645641255,
+    "risk_score": 7.6214253844332225,
+    "timestamp": "2025-09-18 11:14:19.391638",
+    "tags": [
+      "Congress",
+      "AI_safety",
+      "weapons",
+      "elections"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/30",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391643"
+    }
+  },
+  {
+    "id": "sample_31_1757935939",
+    "title": "Google Achieves Quantum AI Breakthrough",
+    "content": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discovery and financial modeling.",
+    "summary": "Google's quantum computing division announced successful demonstration of quantum machine learning algorithms, potentially revolutionizing drug discov...",
+    "source": "tripwire_alerts",
+    "category": "ai_development",
+    "confidence_score": 0.9181123146156588,
+    "impact_score": 6.390061210335997,
+    "urgency_score": 7.217522724316948,
+    "risk_score": 2.61009492085691,
+    "timestamp": "2025-09-15 11:32:19.391650",
+    "tags": [
+      "Google",
+      "quantum",
+      "AI",
+      "machine_learning"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/31",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391655"
+    }
+  },
+  {
+    "id": "sample_32_1758156859",
+    "title": "OpenAI Releases GPT-5 with Revolutionary Capabilities",
+    "content": "OpenAI unveiled GPT-5, demonstrating unprecedented reasoning abilities and multimodal processing. The model shows significant improvements in scientific research and complex problem-solving.",
+    "summary": "OpenAI unveiled GPT-5, demonstrating unprecedented reasoning abilities and multimodal processing. The model shows significant improvements in scientif...",
+    "source": "rss_feeds",
+    "category": "ai_development",
+    "confidence_score": 0.8237515416131067,
+    "impact_score": 4.003275773761988,
+    "urgency_score": 6.527896890373207,
+    "risk_score": 7.69720573109085,
+    "timestamp": "2025-09-18 00:54:19.391662",
+    "tags": [
+      "OpenAI",
+      "GPT-5",
+      "AI",
+      "breakthrough"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/32",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391668"
+    }
+  },
+  {
+    "id": "sample_33_1757929579",
+    "title": "Critical Infrastructure Vulnerability Discovered",
+    "content": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water treatment facilities.",
+    "summary": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water ...",
+    "source": "regulatory_feeds",
+    "category": "risk_exposure",
+    "confidence_score": 0.7711994959361229,
+    "impact_score": 7.4356410195815625,
+    "urgency_score": 6.506273753968794,
+    "risk_score": 7.41884945481352,
+    "timestamp": "2025-09-15 09:46:19.391674",
+    "tags": [
+      "cybersecurity",
+      "infrastructure",
+      "vulnerability",
+      "industrial"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/33",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391680"
+    }
+  },
+  {
+    "id": "sample_34_1757956819",
+    "title": "Microsoft Integrates Advanced AI into Enterprise Software",
+    "content": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predictive analytics.",
+    "summary": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predicti...",
+    "source": "rss_feeds",
+    "category": "ai_development",
+    "confidence_score": 0.9813062664604064,
+    "impact_score": 4.75466710540618,
+    "urgency_score": 3.9968580640624585,
+    "risk_score": 7.5769418498141885,
+    "timestamp": "2025-09-15 17:20:19.391687",
+    "tags": [
+      "Microsoft",
+      "enterprise",
+      "Office365",
+      "automation"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/34",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391694"
+    }
+  },
+  {
+    "id": "sample_35_1758034879",
+    "title": "Tech Stocks Plunge 15% Following AI Regulation Announcement",
+    "content": "Major technology stocks experienced significant decline after new AI regulation framework was announced by federal authorities. The proposed regulations would require extensive compliance reporting for AI systems.",
+    "summary": "Major technology stocks experienced significant decline after new AI regulation framework was announced by federal authorities. The proposed regulatio...",
+    "source": "regulatory_feeds",
+    "category": "market_shock",
+    "confidence_score": 0.6897843167002926,
+    "impact_score": 8.59171163928103,
+    "urgency_score": 6.569143512802517,
+    "risk_score": 6.58978066467772,
+    "timestamp": "2025-09-16 15:01:19.391700",
+    "tags": [
+      "technology",
+      "stocks",
+      "AI",
+      "regulation"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/35",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391706"
+    }
+  },
+  {
+    "id": "sample_36_1758141019",
+    "title": "International AI Governance Summit Reaches Key Agreements",
+    "content": "G7 nations signed preliminary agreement on international AI governance standards, establishing framework for cross-border AI system oversight and ethical guidelines.",
+    "summary": "G7 nations signed preliminary agreement on international AI governance standards, establishing framework for cross-border AI system oversight and ethi...",
+    "source": "tripwire_alerts",
+    "category": "political_event",
+    "confidence_score": 0.8105657498349261,
+    "impact_score": 7.3166915385120275,
+    "urgency_score": 4.960602165623678,
+    "risk_score": 1.494769151788743,
+    "timestamp": "2025-09-17 20:30:19.391712",
+    "tags": [
+      "G7",
+      "international",
+      "governance",
+      "ethics"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/36",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391718"
+    }
+  },
+  {
+    "id": "sample_37_1757984659",
+    "title": "FDA Issues Emergency Use Authorization Guidelines",
+    "content": "Food and Drug Administration released updated emergency use authorization procedures for AI-enabled medical devices, streamlining approval processes while maintaining safety standards.",
+    "summary": "Food and Drug Administration released updated emergency use authorization procedures for AI-enabled medical devices, streamlining approval processes w...",
+    "source": "rss_feeds",
+    "category": "regulatory_change",
+    "confidence_score": 0.9321779703069052,
+    "impact_score": 7.162805402519019,
+    "urgency_score": 8.22432721534317,
+    "risk_score": 5.567252688905825,
+    "timestamp": "2025-09-16 01:04:19.391724",
+    "tags": [
+      "FDA",
+      "medical_devices",
+      "AI",
+      "authorization"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/37",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391730"
+    }
+  },
+  {
+    "id": "sample_38_1758333559",
+    "title": "Congressional AI Safety Hearing Reveals Bipartisan Concerns",
+    "content": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon systems and election security.",
+    "summary": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon syst...",
+    "source": "rss_feeds",
+    "category": "political_event",
+    "confidence_score": 0.8243378496189823,
+    "impact_score": 8.563455908165016,
+    "urgency_score": 8.114942152475674,
+    "risk_score": 1.487236807661777,
+    "timestamp": "2025-09-20 01:59:19.391736",
+    "tags": [
+      "Congress",
+      "AI_safety",
+      "weapons",
+      "elections"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/38",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391742"
+    }
+  },
+  {
+    "id": "sample_39_1757828839",
+    "title": "Congressional AI Safety Hearing Reveals Bipartisan Concerns",
+    "content": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon systems and election security.",
+    "summary": "House Committee on Science and Technology held emergency hearings on AI safety, with lawmakers expressing unified concern about autonomous weapon syst...",
+    "source": "regulatory_feeds",
+    "category": "political_event",
+    "confidence_score": 0.6081407975959553,
+    "impact_score": 9.467651366876767,
+    "urgency_score": 6.061081301423636,
+    "risk_score": 6.44917988245266,
+    "timestamp": "2025-09-14 05:47:19.391749",
+    "tags": [
+      "Congress",
+      "AI_safety",
+      "weapons",
+      "elections"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/39",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391754"
+    }
+  },
+  {
+    "id": "sample_40_1757809819",
+    "title": "Cryptocurrency Market Faces Massive Selloff",
+    "content": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reached historic highs.",
+    "summary": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reache...",
+    "source": "web_scraping",
+    "category": "market_shock",
+    "confidence_score": 0.9935734969035006,
+    "impact_score": 3.0864621940681882,
+    "urgency_score": 5.219175019948423,
+    "risk_score": 6.4651140279354555,
+    "timestamp": "2025-09-14 00:30:19.391761",
+    "tags": [
+      "cryptocurrency",
+      "bitcoin",
+      "regulation",
+      "trading"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/40",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391767"
+    }
+  },
+  {
+    "id": "sample_41_1758038059",
+    "title": "FDA Issues Emergency Use Authorization Guidelines",
+    "content": "Food and Drug Administration released updated emergency use authorization procedures for AI-enabled medical devices, streamlining approval processes while maintaining safety standards.",
+    "summary": "Food and Drug Administration released updated emergency use authorization procedures for AI-enabled medical devices, streamlining approval processes w...",
+    "source": "rss_feeds",
+    "category": "regulatory_change",
+    "confidence_score": 0.6123170165156179,
+    "impact_score": 5.690935128543542,
+    "urgency_score": 2.368524019646154,
+    "risk_score": 2.6792498824680924,
+    "timestamp": "2025-09-16 15:54:19.391773",
+    "tags": [
+      "FDA",
+      "medical_devices",
+      "AI",
+      "authorization"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/41",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391779"
+    }
+  },
+  {
+    "id": "sample_42_1758175039",
+    "title": "Federal Reserve Signals Emergency Rate Decision",
+    "content": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased significantly in pre-market trading.",
+    "summary": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased sign...",
+    "source": "rss_feeds",
+    "category": "market_shock",
+    "confidence_score": 0.692087835451476,
+    "impact_score": 4.8879296216482775,
+    "urgency_score": 3.2101101634308344,
+    "risk_score": 6.367772144012126,
+    "timestamp": "2025-09-18 05:57:19.391786",
+    "tags": [
+      "federal_reserve",
+      "interest_rates",
+      "inflation",
+      "markets"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/42",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391792"
+    }
+  },
+  {
+    "id": "sample_43_1757843539",
+    "title": "OpenAI Releases GPT-5 with Revolutionary Capabilities",
+    "content": "OpenAI unveiled GPT-5, demonstrating unprecedented reasoning abilities and multimodal processing. The model shows significant improvements in scientific research and complex problem-solving.",
+    "summary": "OpenAI unveiled GPT-5, demonstrating unprecedented reasoning abilities and multimodal processing. The model shows significant improvements in scientif...",
+    "source": "tripwire_alerts",
+    "category": "ai_development",
+    "confidence_score": 0.7921818824584951,
+    "impact_score": 9.913140488149509,
+    "urgency_score": 6.820954091161698,
+    "risk_score": 7.592338430360182,
+    "timestamp": "2025-09-14 09:52:19.391798",
+    "tags": [
+      "OpenAI",
+      "GPT-5",
+      "AI",
+      "breakthrough"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/43",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391804"
+    }
+  },
+  {
+    "id": "sample_44_1758349339",
+    "title": "Critical Infrastructure Vulnerability Discovered",
+    "content": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water treatment facilities.",
+    "summary": "Cybersecurity researchers identified significant vulnerability in widely-used industrial control systems, potentially affecting power grids and water ...",
+    "source": "tripwire_alerts",
+    "category": "risk_exposure",
+    "confidence_score": 0.6089549752020234,
+    "impact_score": 7.632415820017036,
+    "urgency_score": 8.847615119850786,
+    "risk_score": 2.8909208223887313,
+    "timestamp": "2025-09-20 06:22:19.391810",
+    "tags": [
+      "cybersecurity",
+      "infrastructure",
+      "vulnerability",
+      "industrial"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/44",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391816"
+    }
+  },
+  {
+    "id": "sample_45_1757895439",
+    "title": "Cryptocurrency Market Faces Massive Selloff",
+    "content": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reached historic highs.",
+    "summary": "Bitcoin and other major cryptocurrencies dropped over 20% following regulatory crackdown announcements from multiple countries. Trading volumes reache...",
+    "source": "web_scraping",
+    "category": "market_shock",
+    "confidence_score": 0.9107670529984758,
+    "impact_score": 4.724508276902758,
+    "urgency_score": 7.7132575775177985,
+    "risk_score": 7.583745876239533,
+    "timestamp": "2025-09-15 00:17:19.391822",
+    "tags": [
+      "cryptocurrency",
+      "bitcoin",
+      "regulation",
+      "trading"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/45",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391828"
+    }
+  },
+  {
+    "id": "sample_46_1757954719",
+    "title": "GDPR-Style Privacy Law Proposed for US Markets",
+    "content": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms for all US companies.",
+    "summary": "Congressional committee introduced bipartisan legislation modeled after GDPR, requiring enhanced data protection measures and user consent mechanisms ...",
+    "source": "regulatory_feeds",
+    "category": "regulatory_change",
+    "confidence_score": 0.9328614404786172,
+    "impact_score": 9.123344707589142,
+    "urgency_score": 4.023314850017115,
+    "risk_score": 7.173794833854211,
+    "timestamp": "2025-09-15 16:45:19.391834",
+    "tags": [
+      "privacy",
+      "GDPR",
+      "legislation",
+      "data_protection"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/46",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391840"
+    }
+  },
+  {
+    "id": "sample_47_1758181339",
+    "title": "FDA Issues Emergency Use Authorization Guidelines",
+    "content": "Food and Drug Administration released updated emergency use authorization procedures for AI-enabled medical devices, streamlining approval processes while maintaining safety standards.",
+    "summary": "Food and Drug Administration released updated emergency use authorization procedures for AI-enabled medical devices, streamlining approval processes w...",
+    "source": "web_scraping",
+    "category": "regulatory_change",
+    "confidence_score": 0.8622545168580793,
+    "impact_score": 9.420044268749681,
+    "urgency_score": 6.116538922138741,
+    "risk_score": 3.3597526786837197,
+    "timestamp": "2025-09-18 07:42:19.391847",
+    "tags": [
+      "FDA",
+      "medical_devices",
+      "AI",
+      "authorization"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/47",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391852"
+    }
+  },
+  {
+    "id": "sample_48_1757947879",
+    "title": "Federal Reserve Signals Emergency Rate Decision",
+    "content": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased significantly in pre-market trading.",
+    "summary": "Federal Reserve officials indicated potential emergency interest rate adjustment following unexpected inflation data. Market volatility increased sign...",
+    "source": "web_scraping",
+    "category": "market_shock",
+    "confidence_score": 0.6815012180127361,
+    "impact_score": 5.480559052866206,
+    "urgency_score": 7.281639735476164,
+    "risk_score": 6.575392918926314,
+    "timestamp": "2025-09-15 14:51:19.391859",
+    "tags": [
+      "federal_reserve",
+      "interest_rates",
+      "inflation",
+      "markets"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/48",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391865"
+    }
+  },
+  {
+    "id": "sample_49_1757711059",
+    "title": "Microsoft Integrates Advanced AI into Enterprise Software",
+    "content": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predictive analytics.",
+    "summary": "Microsoft announced comprehensive AI integration across Office 365, Azure, and enterprise tools, enabling automated workflow optimization and predicti...",
+    "source": "rss_feeds",
+    "category": "ai_development",
+    "confidence_score": 0.6521507078951726,
+    "impact_score": 6.18996190605761,
+    "urgency_score": 6.097920585279977,
+    "risk_score": 5.407418952606128,
+    "timestamp": "2025-09-12 21:04:19.391871",
+    "tags": [
+      "Microsoft",
+      "enterprise",
+      "Office365",
+      "automation"
+    ],
+    "related_entities": [],
+    "source_url": "https://example.com/article/49",
+    "metadata": {
+      "sample_data": true,
+      "generated_at": "2025-09-20T14:52:19.391877"
+    }
+  }
+]

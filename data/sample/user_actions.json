@@ -1,0 +1,1519 @@
+[
+  {
+    "id": "action_0_1755929419",
+    "user_id": "user_6",
+    "action_type": "share",
+    "target_id": "target_21",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-23 06:10:19.391888",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "web_scraping",
+      "session_duration": 144,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_1_1757435179",
+    "user_id": "user_8",
+    "action_type": "share",
+    "target_id": "target_17",
+    "target_type": "feed",
+    "timestamp": "2025-09-09 16:26:19.391913",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "regulatory_feeds",
+      "session_duration": 403,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_2_1756372039",
+    "user_id": "user_10",
+    "action_type": "bookmark",
+    "target_id": "target_7",
+    "target_type": "memo",
+    "timestamp": "2025-08-28 09:07:19.391932",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "web_scraping",
+      "session_duration": 588,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_3_1756542199",
+    "user_id": "user_3",
+    "action_type": "share",
+    "target_id": "target_5",
+    "target_type": "feed",
+    "timestamp": "2025-08-30 08:23:19.391946",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "user_uploads",
+      "session_duration": 344,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_4_1756029019",
+    "user_id": "user_3",
+    "action_type": "bookmark",
+    "target_id": "target_27",
+    "target_type": "feed",
+    "timestamp": "2025-08-24 09:50:19.391959",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "custom_agents",
+      "session_duration": 90,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_5_1757191879",
+    "user_id": "user_9",
+    "action_type": "click",
+    "target_id": "target_8",
+    "target_type": "feed",
+    "timestamp": "2025-09-06 20:51:19.391972",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "rss_feeds",
+      "session_duration": 570,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_6_1757204959",
+    "user_id": "user_6",
+    "action_type": "click",
+    "target_id": "target_26",
+    "target_type": "memo",
+    "timestamp": "2025-09-07 00:29:19.391984",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "custom_agents",
+      "session_duration": 123,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_7_1758262279",
+    "user_id": "user_5",
+    "action_type": "dismiss",
+    "target_id": "target_10",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-19 06:11:19.391997",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "google_drive",
+      "session_duration": 348,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_8_1757662519",
+    "user_id": "user_8",
+    "action_type": "read",
+    "target_id": "target_14",
+    "target_type": "memo",
+    "timestamp": "2025-09-12 07:35:19.392009",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "custom_agents",
+      "session_duration": 214,
+      "sample_data": true,
+      "reading_time_seconds": 42
+    }
+  },
+  {
+    "id": "action_9_1755916459",
+    "user_id": "user_10",
+    "action_type": "read",
+    "target_id": "target_6",
+    "target_type": "memo",
+    "timestamp": "2025-08-23 02:34:19.392023",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "regulatory_feeds",
+      "session_duration": 521,
+      "sample_data": true,
+      "reading_time_seconds": 84
+    }
+  },
+  {
+    "id": "action_10_1757233159",
+    "user_id": "user_6",
+    "action_type": "dismiss",
+    "target_id": "target_26",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-07 08:19:19.392036",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "google_drive",
+      "session_duration": 201,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_11_1757543899",
+    "user_id": "user_1",
+    "action_type": "share",
+    "target_id": "target_50",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-10 22:38:19.392049",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "tripwire_alerts",
+      "session_duration": 48,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_12_1757673799",
+    "user_id": "user_3",
+    "action_type": "bookmark",
+    "target_id": "target_15",
+    "target_type": "memo",
+    "timestamp": "2025-09-12 10:43:19.392078",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "user_uploads",
+      "session_duration": 394,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_13_1757088919",
+    "user_id": "user_8",
+    "action_type": "click",
+    "target_id": "target_37",
+    "target_type": "feed",
+    "timestamp": "2025-09-05 16:15:19.392091",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "regulatory_feeds",
+      "session_duration": 48,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_14_1755947299",
+    "user_id": "user_4",
+    "action_type": "bookmark",
+    "target_id": "target_38",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-23 11:08:19.392103",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "aiprm_chats",
+      "session_duration": 450,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_15_1756109059",
+    "user_id": "user_2",
+    "action_type": "bookmark",
+    "target_id": "target_34",
+    "target_type": "feed",
+    "timestamp": "2025-08-25 08:04:19.392115",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "google_drive",
+      "session_duration": 109,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_16_1757650939",
+    "user_id": "user_10",
+    "action_type": "dismiss",
+    "target_id": "target_46",
+    "target_type": "memo",
+    "timestamp": "2025-09-12 04:22:19.392127",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "regulatory_feeds",
+      "session_duration": 399,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_17_1757300119",
+    "user_id": "user_8",
+    "action_type": "bookmark",
+    "target_id": "target_26",
+    "target_type": "memo",
+    "timestamp": "2025-09-08 02:55:19.392140",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "aiprm_chats",
+      "session_duration": 142,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_18_1756333399",
+    "user_id": "user_7",
+    "action_type": "read",
+    "target_id": "target_42",
+    "target_type": "feed",
+    "timestamp": "2025-08-27 22:23:19.392153",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "aiprm_chats",
+      "session_duration": 316,
+      "sample_data": true,
+      "reading_time_seconds": 178
+    }
+  },
+  {
+    "id": "action_19_1757584819",
+    "user_id": "user_2",
+    "action_type": "share",
+    "target_id": "target_33",
+    "target_type": "feed",
+    "timestamp": "2025-09-11 10:00:19.392166",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "web_scraping",
+      "session_duration": 105,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_20_1757721559",
+    "user_id": "user_4",
+    "action_type": "read",
+    "target_id": "target_41",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-12 23:59:19.392178",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "aiprm_chats",
+      "session_duration": 268,
+      "sample_data": true,
+      "reading_time_seconds": 298
+    }
+  },
+  {
+    "id": "action_21_1756802299",
+    "user_id": "user_4",
+    "action_type": "bookmark",
+    "target_id": "target_9",
+    "target_type": "feed",
+    "timestamp": "2025-09-02 08:38:19.392191",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "aiprm_chats",
+      "session_duration": 534,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_22_1757190499",
+    "user_id": "user_1",
+    "action_type": "bookmark",
+    "target_id": "target_7",
+    "target_type": "feed",
+    "timestamp": "2025-09-06 20:28:19.392204",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "web_scraping",
+      "session_duration": 278,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_23_1756038739",
+    "user_id": "user_6",
+    "action_type": "bookmark",
+    "target_id": "target_50",
+    "target_type": "feed",
+    "timestamp": "2025-08-24 12:32:19.392215",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "tripwire_alerts",
+      "session_duration": 341,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_24_1757451499",
+    "user_id": "user_10",
+    "action_type": "share",
+    "target_id": "target_13",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-09 20:58:19.392228",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "custom_agents",
+      "session_duration": 53,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_25_1757659579",
+    "user_id": "user_1",
+    "action_type": "share",
+    "target_id": "target_19",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-12 06:46:19.392241",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "custom_agents",
+      "session_duration": 476,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_26_1757685499",
+    "user_id": "user_4",
+    "action_type": "dismiss",
+    "target_id": "target_6",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-12 13:58:19.392252",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "regulatory_feeds",
+      "session_duration": 73,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_27_1757968279",
+    "user_id": "user_9",
+    "action_type": "share",
+    "target_id": "target_37",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-15 20:31:19.392264",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "rss_feeds",
+      "session_duration": 135,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_28_1757993959",
+    "user_id": "user_2",
+    "action_type": "click",
+    "target_id": "target_38",
+    "target_type": "feed",
+    "timestamp": "2025-09-16 03:39:19.392276",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "google_drive",
+      "session_duration": 163,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_29_1757409079",
+    "user_id": "user_9",
+    "action_type": "read",
+    "target_id": "target_4",
+    "target_type": "feed",
+    "timestamp": "2025-09-09 09:11:19.392288",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "rss_feeds",
+      "session_duration": 278,
+      "sample_data": true,
+      "reading_time_seconds": 270
+    }
+  },
+  {
+    "id": "action_30_1757102239",
+    "user_id": "user_1",
+    "action_type": "share",
+    "target_id": "target_14",
+    "target_type": "feed",
+    "timestamp": "2025-09-05 19:57:19.392301",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "tripwire_alerts",
+      "session_duration": 486,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_31_1756847539",
+    "user_id": "user_8",
+    "action_type": "click",
+    "target_id": "target_24",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-02 21:12:19.392312",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "user_uploads",
+      "session_duration": 557,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_32_1755742639",
+    "user_id": "user_3",
+    "action_type": "share",
+    "target_id": "target_48",
+    "target_type": "memo",
+    "timestamp": "2025-08-21 02:17:19.392324",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "regulatory_feeds",
+      "session_duration": 244,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_33_1756468579",
+    "user_id": "user_9",
+    "action_type": "share",
+    "target_id": "target_33",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-29 11:56:19.392335",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "web_scraping",
+      "session_duration": 558,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_34_1755924619",
+    "user_id": "user_10",
+    "action_type": "read",
+    "target_id": "target_15",
+    "target_type": "feed",
+    "timestamp": "2025-08-23 04:50:19.392347",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "user_uploads",
+      "session_duration": 178,
+      "sample_data": true,
+      "reading_time_seconds": 181
+    }
+  },
+  {
+    "id": "action_35_1756433779",
+    "user_id": "user_5",
+    "action_type": "dismiss",
+    "target_id": "target_1",
+    "target_type": "feed",
+    "timestamp": "2025-08-29 02:16:19.392359",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "custom_agents",
+      "session_duration": 277,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_36_1757268379",
+    "user_id": "user_7",
+    "action_type": "share",
+    "target_id": "target_40",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-07 18:06:19.392370",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "custom_agents",
+      "session_duration": 494,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_37_1756227319",
+    "user_id": "user_4",
+    "action_type": "read",
+    "target_id": "target_20",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-26 16:55:19.392382",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "aiprm_chats",
+      "session_duration": 231,
+      "sample_data": true,
+      "reading_time_seconds": 68
+    }
+  },
+  {
+    "id": "action_38_1756737979",
+    "user_id": "user_6",
+    "action_type": "bookmark",
+    "target_id": "target_3",
+    "target_type": "feed",
+    "timestamp": "2025-09-01 14:46:19.392394",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "google_drive",
+      "session_duration": 515,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_39_1758285799",
+    "user_id": "user_4",
+    "action_type": "dismiss",
+    "target_id": "target_15",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-19 12:43:19.392406",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "google_drive",
+      "session_duration": 569,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_40_1757444839",
+    "user_id": "user_7",
+    "action_type": "dismiss",
+    "target_id": "target_34",
+    "target_type": "memo",
+    "timestamp": "2025-09-09 19:07:19.392419",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "rss_feeds",
+      "session_duration": 403,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_41_1755706039",
+    "user_id": "user_2",
+    "action_type": "share",
+    "target_id": "target_21",
+    "target_type": "memo",
+    "timestamp": "2025-08-20 16:07:19.392431",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "custom_agents",
+      "session_duration": 464,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_42_1755803419",
+    "user_id": "user_1",
+    "action_type": "share",
+    "target_id": "target_39",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-21 19:10:19.392443",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "aiprm_chats",
+      "session_duration": 436,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_43_1756342999",
+    "user_id": "user_10",
+    "action_type": "click",
+    "target_id": "target_10",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-28 01:03:19.392454",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "user_uploads",
+      "session_duration": 175,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_44_1757269039",
+    "user_id": "user_10",
+    "action_type": "click",
+    "target_id": "target_43",
+    "target_type": "memo",
+    "timestamp": "2025-09-07 18:17:19.392466",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "regulatory_feeds",
+      "session_duration": 533,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_45_1756381279",
+    "user_id": "user_5",
+    "action_type": "read",
+    "target_id": "target_11",
+    "target_type": "memo",
+    "timestamp": "2025-08-28 11:41:19.392478",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "regulatory_feeds",
+      "session_duration": 291,
+      "sample_data": true,
+      "reading_time_seconds": 73
+    }
+  },
+  {
+    "id": "action_46_1758041659",
+    "user_id": "user_4",
+    "action_type": "click",
+    "target_id": "target_36",
+    "target_type": "memo",
+    "timestamp": "2025-09-16 16:54:19.392495",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "google_drive",
+      "session_duration": 94,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_47_1757747239",
+    "user_id": "user_9",
+    "action_type": "click",
+    "target_id": "target_37",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-13 07:07:19.392507",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "user_uploads",
+      "session_duration": 421,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_48_1758288079",
+    "user_id": "user_7",
+    "action_type": "read",
+    "target_id": "target_42",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-19 13:21:19.392519",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "web_scraping",
+      "session_duration": 447,
+      "sample_data": true,
+      "reading_time_seconds": 283
+    }
+  },
+  {
+    "id": "action_49_1755843859",
+    "user_id": "user_1",
+    "action_type": "dismiss",
+    "target_id": "target_46",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-22 06:24:19.392531",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "regulatory_feeds",
+      "session_duration": 406,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_50_1757238439",
+    "user_id": "user_10",
+    "action_type": "click",
+    "target_id": "target_13",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-07 09:47:19.392542",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "google_drive",
+      "session_duration": 385,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_51_1756714879",
+    "user_id": "user_9",
+    "action_type": "share",
+    "target_id": "target_8",
+    "target_type": "feed",
+    "timestamp": "2025-09-01 08:21:19.392553",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "tripwire_alerts",
+      "session_duration": 117,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_52_1757247859",
+    "user_id": "user_4",
+    "action_type": "read",
+    "target_id": "target_7",
+    "target_type": "memo",
+    "timestamp": "2025-09-07 12:24:19.392564",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "google_drive",
+      "session_duration": 44,
+      "sample_data": true,
+      "reading_time_seconds": 134
+    }
+  },
+  {
+    "id": "action_53_1757518999",
+    "user_id": "user_7",
+    "action_type": "bookmark",
+    "target_id": "target_46",
+    "target_type": "memo",
+    "timestamp": "2025-09-10 15:43:19.392577",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "user_uploads",
+      "session_duration": 144,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_54_1755929599",
+    "user_id": "user_2",
+    "action_type": "click",
+    "target_id": "target_27",
+    "target_type": "memo",
+    "timestamp": "2025-08-23 06:13:19.392588",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "google_drive",
+      "session_duration": 126,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_55_1756932139",
+    "user_id": "user_2",
+    "action_type": "bookmark",
+    "target_id": "target_13",
+    "target_type": "feed",
+    "timestamp": "2025-09-03 20:42:19.392600",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "custom_agents",
+      "session_duration": 342,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_56_1757726959",
+    "user_id": "user_7",
+    "action_type": "click",
+    "target_id": "target_49",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-13 01:29:19.392611",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "regulatory_feeds",
+      "session_duration": 588,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_57_1757246539",
+    "user_id": "user_2",
+    "action_type": "click",
+    "target_id": "target_33",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-07 12:02:19.392623",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "google_drive",
+      "session_duration": 154,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_58_1756608739",
+    "user_id": "user_1",
+    "action_type": "bookmark",
+    "target_id": "target_1",
+    "target_type": "memo",
+    "timestamp": "2025-08-31 02:52:19.392635",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "custom_agents",
+      "session_duration": 522,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_59_1757361799",
+    "user_id": "user_7",
+    "action_type": "dismiss",
+    "target_id": "target_34",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-08 20:03:19.392646",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "web_scraping",
+      "session_duration": 185,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_60_1757115499",
+    "user_id": "user_9",
+    "action_type": "share",
+    "target_id": "target_36",
+    "target_type": "feed",
+    "timestamp": "2025-09-05 23:38:19.392658",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "aiprm_chats",
+      "session_duration": 186,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_61_1756288039",
+    "user_id": "user_1",
+    "action_type": "share",
+    "target_id": "target_23",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-27 09:47:19.392670",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "rss_feeds",
+      "session_duration": 598,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_62_1757710339",
+    "user_id": "user_6",
+    "action_type": "read",
+    "target_id": "target_12",
+    "target_type": "memo",
+    "timestamp": "2025-09-12 20:52:19.392681",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "user_uploads",
+      "session_duration": 159,
+      "sample_data": true,
+      "reading_time_seconds": 196
+    }
+  },
+  {
+    "id": "action_63_1756829299",
+    "user_id": "user_8",
+    "action_type": "bookmark",
+    "target_id": "target_43",
+    "target_type": "memo",
+    "timestamp": "2025-09-02 16:08:19.392693",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "rss_feeds",
+      "session_duration": 496,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_64_1757244559",
+    "user_id": "user_5",
+    "action_type": "bookmark",
+    "target_id": "target_2",
+    "target_type": "feed",
+    "timestamp": "2025-09-07 11:29:19.392705",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "custom_agents",
+      "session_duration": 489,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_65_1756520899",
+    "user_id": "user_8",
+    "action_type": "bookmark",
+    "target_id": "target_33",
+    "target_type": "feed",
+    "timestamp": "2025-08-30 02:28:19.392717",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "aiprm_chats",
+      "session_duration": 400,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_66_1757026579",
+    "user_id": "user_1",
+    "action_type": "share",
+    "target_id": "target_10",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-04 22:56:19.392729",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "tripwire_alerts",
+      "session_duration": 576,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_67_1756823179",
+    "user_id": "user_3",
+    "action_type": "click",
+    "target_id": "target_4",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-02 14:26:19.392740",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "user_uploads",
+      "session_duration": 155,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_68_1757572939",
+    "user_id": "user_10",
+    "action_type": "click",
+    "target_id": "target_5",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-11 06:42:19.392752",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "aiprm_chats",
+      "session_duration": 216,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_69_1755993859",
+    "user_id": "user_6",
+    "action_type": "dismiss",
+    "target_id": "target_12",
+    "target_type": "memo",
+    "timestamp": "2025-08-24 00:04:19.392764",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "user_uploads",
+      "session_duration": 312,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_70_1755996559",
+    "user_id": "user_3",
+    "action_type": "click",
+    "target_id": "target_12",
+    "target_type": "memo",
+    "timestamp": "2025-08-24 00:49:19.392775",
+    "session_id": null,
+    "metadata": {
+      "category": "black_box_discovery",
+      "source": "user_uploads",
+      "session_duration": 521,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_71_1758062899",
+    "user_id": "user_1",
+    "action_type": "read",
+    "target_id": "target_3",
+    "target_type": "memo",
+    "timestamp": "2025-09-16 22:48:19.392787",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "regulatory_feeds",
+      "session_duration": 484,
+      "sample_data": true,
+      "reading_time_seconds": 175
+    }
+  },
+  {
+    "id": "action_72_1758337339",
+    "user_id": "user_7",
+    "action_type": "read",
+    "target_id": "target_31",
+    "target_type": "memo",
+    "timestamp": "2025-09-20 03:02:19.392799",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "tripwire_alerts",
+      "session_duration": 105,
+      "sample_data": true,
+      "reading_time_seconds": 111
+    }
+  },
+  {
+    "id": "action_73_1757686879",
+    "user_id": "user_8",
+    "action_type": "read",
+    "target_id": "target_12",
+    "target_type": "memo",
+    "timestamp": "2025-09-12 14:21:19.392812",
+    "session_id": null,
+    "metadata": {
+      "category": "ai_development",
+      "source": "regulatory_feeds",
+      "session_duration": 592,
+      "sample_data": true,
+      "reading_time_seconds": 192
+    }
+  },
+  {
+    "id": "action_74_1755834919",
+    "user_id": "user_4",
+    "action_type": "bookmark",
+    "target_id": "target_29",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-22 03:55:19.392824",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "rss_feeds",
+      "session_duration": 386,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_75_1758321679",
+    "user_id": "user_1",
+    "action_type": "dismiss",
+    "target_id": "target_20",
+    "target_type": "memo",
+    "timestamp": "2025-09-19 22:41:19.392835",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "web_scraping",
+      "session_duration": 469,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_76_1756765939",
+    "user_id": "user_10",
+    "action_type": "dismiss",
+    "target_id": "target_50",
+    "target_type": "feed",
+    "timestamp": "2025-09-01 22:32:19.392847",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "web_scraping",
+      "session_duration": 152,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_77_1757687059",
+    "user_id": "user_10",
+    "action_type": "bookmark",
+    "target_id": "target_1",
+    "target_type": "memo",
+    "timestamp": "2025-09-12 14:24:19.392862",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "tripwire_alerts",
+      "session_duration": 130,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_78_1757836639",
+    "user_id": "user_4",
+    "action_type": "share",
+    "target_id": "target_11",
+    "target_type": "feed",
+    "timestamp": "2025-09-14 07:57:19.392945",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "aiprm_chats",
+      "session_duration": 489,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_79_1756213999",
+    "user_id": "user_9",
+    "action_type": "share",
+    "target_id": "target_40",
+    "target_type": "feed",
+    "timestamp": "2025-08-26 13:13:19.392960",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "web_scraping",
+      "session_duration": 118,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_80_1756666219",
+    "user_id": "user_8",
+    "action_type": "share",
+    "target_id": "target_19",
+    "target_type": "memo",
+    "timestamp": "2025-08-31 18:50:19.392972",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "user_uploads",
+      "session_duration": 331,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_81_1756044619",
+    "user_id": "user_5",
+    "action_type": "click",
+    "target_id": "target_9",
+    "target_type": "feed",
+    "timestamp": "2025-08-24 14:10:19.392984",
+    "session_id": null,
+    "metadata": {
+      "category": "risk_exposure",
+      "source": "aiprm_chats",
+      "session_duration": 392,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_82_1756166359",
+    "user_id": "user_9",
+    "action_type": "read",
+    "target_id": "target_22",
+    "target_type": "memo",
+    "timestamp": "2025-08-25 23:59:19.392996",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "aiprm_chats",
+      "session_duration": 566,
+      "sample_data": true,
+      "reading_time_seconds": 198
+    }
+  },
+  {
+    "id": "action_83_1755705259",
+    "user_id": "user_9",
+    "action_type": "dismiss",
+    "target_id": "target_43",
+    "target_type": "feed",
+    "timestamp": "2025-08-20 15:54:19.393008",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "regulatory_feeds",
+      "session_duration": 129,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_84_1757095459",
+    "user_id": "user_5",
+    "action_type": "read",
+    "target_id": "target_32",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-05 18:04:19.393020",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "regulatory_feeds",
+      "session_duration": 524,
+      "sample_data": true,
+      "reading_time_seconds": 119
+    }
+  },
+  {
+    "id": "action_85_1755900679",
+    "user_id": "user_1",
+    "action_type": "dismiss",
+    "target_id": "target_32",
+    "target_type": "feed",
+    "timestamp": "2025-08-22 22:11:19.393032",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "aiprm_chats",
+      "session_duration": 173,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_86_1758228679",
+    "user_id": "user_8",
+    "action_type": "dismiss",
+    "target_id": "target_36",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-18 20:51:19.393044",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "google_drive",
+      "session_duration": 247,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_87_1756108219",
+    "user_id": "user_9",
+    "action_type": "bookmark",
+    "target_id": "target_17",
+    "target_type": "memo",
+    "timestamp": "2025-08-25 07:50:19.393068",
+    "session_id": null,
+    "metadata": {
+      "category": "regulatory_change",
+      "source": "google_drive",
+      "session_duration": 297,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_88_1758215239",
+    "user_id": "user_9",
+    "action_type": "dismiss",
+    "target_id": "target_32",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-18 17:07:19.393081",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "web_scraping",
+      "session_duration": 259,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_89_1757411899",
+    "user_id": "user_3",
+    "action_type": "read",
+    "target_id": "target_37",
+    "target_type": "feed",
+    "timestamp": "2025-09-09 09:58:19.393093",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "aiprm_chats",
+      "session_duration": 578,
+      "sample_data": true,
+      "reading_time_seconds": 148
+    }
+  },
+  {
+    "id": "action_90_1756976779",
+    "user_id": "user_8",
+    "action_type": "click",
+    "target_id": "target_5",
+    "target_type": "feed",
+    "timestamp": "2025-09-04 09:06:19.393105",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "user_uploads",
+      "session_duration": 89,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_91_1757670919",
+    "user_id": "user_10",
+    "action_type": "bookmark",
+    "target_id": "target_26",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-12 09:55:19.393116",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "aiprm_chats",
+      "session_duration": 477,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_92_1756260559",
+    "user_id": "user_4",
+    "action_type": "share",
+    "target_id": "target_5",
+    "target_type": "feed",
+    "timestamp": "2025-08-27 02:09:19.393128",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "web_scraping",
+      "session_duration": 435,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_93_1756647859",
+    "user_id": "user_3",
+    "action_type": "bookmark",
+    "target_id": "target_39",
+    "target_type": "feed",
+    "timestamp": "2025-08-31 13:44:19.393140",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "tripwire_alerts",
+      "session_duration": 248,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_94_1756414939",
+    "user_id": "user_4",
+    "action_type": "bookmark",
+    "target_id": "target_31",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-28 21:02:19.393152",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "rss_feeds",
+      "session_duration": 337,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_95_1757348779",
+    "user_id": "user_5",
+    "action_type": "dismiss",
+    "target_id": "target_47",
+    "target_type": "feed",
+    "timestamp": "2025-09-08 16:26:19.393163",
+    "session_id": null,
+    "metadata": {
+      "category": "volatility_alert",
+      "source": "user_uploads",
+      "session_duration": 343,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_96_1756273699",
+    "user_id": "user_7",
+    "action_type": "click",
+    "target_id": "target_32",
+    "target_type": "feed",
+    "timestamp": "2025-08-27 05:48:19.393175",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "tripwire_alerts",
+      "session_duration": 243,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_97_1758187519",
+    "user_id": "user_10",
+    "action_type": "bookmark",
+    "target_id": "target_43",
+    "target_type": "memo",
+    "timestamp": "2025-09-18 09:25:19.393187",
+    "session_id": null,
+    "metadata": {
+      "category": "political_event",
+      "source": "tripwire_alerts",
+      "session_duration": 52,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_98_1756423459",
+    "user_id": "user_7",
+    "action_type": "share",
+    "target_id": "target_38",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-08-28 23:24:19.393198",
+    "session_id": null,
+    "metadata": {
+      "category": "policy_shift",
+      "source": "user_uploads",
+      "session_duration": 282,
+      "sample_data": true
+    }
+  },
+  {
+    "id": "action_99_1758166099",
+    "user_id": "user_7",
+    "action_type": "click",
+    "target_id": "target_17",
+    "target_type": "intelligence_item",
+    "timestamp": "2025-09-18 03:28:19.393210",
+    "session_id": null,
+    "metadata": {
+      "category": "market_shock",
+      "source": "custom_agents",
+      "session_duration": 144,
+      "sample_data": true
+    }
+  }
+]
