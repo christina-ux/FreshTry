@@ -35,6 +35,7 @@ from api.dashboard import dashboard
 from api.scoring import scoring
 from api.upload import upload
 from api.gpt_api import gpt
+from api.intelligence import intelligence
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -165,6 +166,9 @@ app.include_router(upload)
 
 # Include GPT router
 app.include_router(gpt)
+
+# Include intelligence router
+app.include_router(intelligence)
 
 
 # API routes

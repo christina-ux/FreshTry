@@ -1,0 +1,77 @@
+{
+  "feed_type": "operations",
+  "generated_at": "2025-09-20T14:56:48.274310",
+  "total_items": 2,
+  "items": [
+    {
+      "id": "asset_2025-09-20T13:56:48.274264_ASSET-006",
+      "timestamp": "2025-09-20T13:56:48.274264",
+      "type": "asset_change",
+      "category": "operations",
+      "priority": "low",
+      "title": "New Asset Added: Database Backup Server",
+      "summary": "New server added to IT Operations with medium risk level",
+      "details": {
+        "timestamp": "2025-09-20T13:56:48.274264",
+        "change_type": "new_asset",
+        "asset_id": "ASSET-006",
+        "asset_name": "Database Backup Server",
+        "asset_type": "server",
+        "risk_level": "medium",
+        "details": {
+          "department": "IT Operations",
+          "location": "Secondary Data Center",
+          "data_classification": "internal"
+        }
+      },
+      "tags": [
+        "asset_management",
+        "new_asset"
+      ],
+      "action_required": false,
+      "related_assets": [
+        "ASSET-006"
+      ]
+    },
+    {
+      "id": "asset_2025-09-20T06:56:48.274272_ASSET-002",
+      "timestamp": "2025-09-20T06:56:48.274272",
+      "type": "asset_change",
+      "category": "operations",
+      "priority": "medium",
+      "title": "Asset Status Change: Finance Department Workstation",
+      "summary": "Status changed from active to maintenance: Scheduled security updates",
+      "details": {
+        "timestamp": "2025-09-20T06:56:48.274272",
+        "change_type": "status_change",
+        "asset_id": "ASSET-002",
+        "asset_name": "Finance Department Workstation",
+        "old_status": "active",
+        "new_status": "maintenance",
+        "details": {
+          "reason": "Scheduled security updates",
+          "estimated_completion": "2025-09-20T16:56:48.274274"
+        }
+      },
+      "tags": [
+        "asset_management",
+        "status_change"
+      ],
+      "action_required": true,
+      "related_assets": [
+        "ASSET-002"
+      ]
+    }
+  ],
+  "metadata": {
+    "data_sources": [
+      "compliance_scores",
+      "asset_management",
+      "contract_tracking",
+      "regulatory_updates",
+      "security_incidents"
+    ],
+    "update_frequency": "real-time",
+    "retention_period": "30 days"
+  }
+}

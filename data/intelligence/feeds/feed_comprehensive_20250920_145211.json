@@ -1,0 +1,352 @@
+{
+  "feed_type": "comprehensive",
+  "generated_at": "2025-09-20T14:52:11.621996",
+  "total_items": 10,
+  "items": [
+    {
+      "id": "asset_2025-09-20T13:52:11.621954_ASSET-006",
+      "timestamp": "2025-09-20T13:52:11.621954",
+      "type": "asset_change",
+      "category": "operations",
+      "priority": "low",
+      "title": "New Asset Added: Database Backup Server",
+      "summary": "New server added to IT Operations with medium risk level",
+      "details": {
+        "timestamp": "2025-09-20T13:52:11.621954",
+        "change_type": "new_asset",
+        "asset_id": "ASSET-006",
+        "asset_name": "Database Backup Server",
+        "asset_type": "server",
+        "risk_level": "medium",
+        "details": {
+          "department": "IT Operations",
+          "location": "Secondary Data Center",
+          "data_classification": "internal"
+        }
+      },
+      "tags": [
+        "asset_management",
+        "new_asset"
+      ],
+      "action_required": false,
+      "related_assets": [
+        "ASSET-006"
+      ]
+    },
+    {
+      "id": "compliance_2025-09-20T12:52:11.621874_NIST 800-53",
+      "timestamp": "2025-09-20T12:52:11.621874",
+      "type": "compliance_change",
+      "category": "compliance",
+      "priority": "medium",
+      "title": "NIST 800-53 Score Improved (+3.2%)",
+      "summary": "Compliance score increased from 84.1% to 87.3% due to improvements in Control Implementation Rate, Evidence Quality",
+      "details": {
+        "timestamp": "2025-09-20T12:52:11.621874",
+        "framework": "NIST 800-53",
+        "change_type": "score_improvement",
+        "old_score": 84.1,
+        "new_score": 87.3,
+        "change": 3.2,
+        "details": {
+          "improved_metrics": [
+            "Control Implementation Rate",
+            "Evidence Quality"
+          ],
+          "reason": "Implementation of AC-2 and AU-4 controls"
+        }
+      },
+      "tags": [
+        "nist_800-53",
+        "score_improvement"
+      ],
+      "action_required": false,
+      "related_assets": []
+    },
+    {
+      "id": "asset_risk_2025-09-20T10:52:11.621956_ASSET-003",
+      "timestamp": "2025-09-20T10:52:11.621956",
+      "type": "asset_risk_change",
+      "category": "security",
+      "priority": "medium",
+      "title": "Asset Risk Change: Customer Database Server",
+      "summary": "Risk level changed from critical to high",
+      "details": {
+        "timestamp": "2025-09-20T10:52:11.621956",
+        "change_type": "risk_level_change",
+        "asset_id": "ASSET-003",
+        "asset_name": "Customer Database Server",
+        "old_risk": "critical",
+        "new_risk": "high",
+        "details": {
+          "reason": "Security patches applied",
+          "updated_controls": [
+            "AC-3",
+            "SC-7"
+          ]
+        }
+      },
+      "tags": [
+        "asset_management",
+        "risk_assessment",
+        "high"
+      ],
+      "action_required": true,
+      "related_assets": [
+        "ASSET-003"
+      ]
+    },
+    {
+      "id": "compliance_2025-09-20T08:52:11.621880_HIPAA",
+      "timestamp": "2025-09-20T08:52:11.621880",
+      "type": "compliance_change",
+      "category": "compliance",
+      "priority": "medium",
+      "title": "Control Implemented: 164.308(a)(5)(ii)(C)",
+      "summary": "Control 'Assigned Security Responsibility' status changed from partially_compliant to compliant",
+      "details": {
+        "timestamp": "2025-09-20T08:52:11.621880",
+        "framework": "HIPAA",
+        "change_type": "control_implementation",
+        "control_id": "164.308(a)(5)(ii)(C)",
+        "old_status": "partially_compliant",
+        "new_status": "compliant",
+        "details": {
+          "control_name": "Assigned Security Responsibility",
+          "evidence_added": "Security policy document updated"
+        }
+      },
+      "tags": [
+        "hipaa",
+        "control_implementation"
+      ],
+      "action_required": false,
+      "related_assets": []
+    },
+    {
+      "id": "asset_2025-09-20T06:52:11.621959_ASSET-002",
+      "timestamp": "2025-09-20T06:52:11.621959",
+      "type": "asset_change",
+      "category": "operations",
+      "priority": "medium",
+      "title": "Asset Status Change: Finance Department Workstation",
+      "summary": "Status changed from active to maintenance: Scheduled security updates",
+      "details": {
+        "timestamp": "2025-09-20T06:52:11.621959",
+        "change_type": "status_change",
+        "asset_id": "ASSET-002",
+        "asset_name": "Finance Department Workstation",
+        "old_status": "active",
+        "new_status": "maintenance",
+        "details": {
+          "reason": "Scheduled security updates",
+          "estimated_completion": "2025-09-20T16:52:11.621961"
+        }
+      },
+      "tags": [
+        "asset_management",
+        "status_change"
+      ],
+      "action_required": true,
+      "related_assets": [
+        "ASSET-002"
+      ]
+    },
+    {
+      "id": "compliance_2025-09-20T02:52:11.621882_PCI DSS",
+      "timestamp": "2025-09-20T02:52:11.621882",
+      "type": "compliance_change",
+      "category": "compliance",
+      "priority": "low",
+      "title": "Risk Level Updated: 3.2.1",
+      "summary": "Risk level changed from high to medium: Enhanced encryption implementation",
+      "details": {
+        "timestamp": "2025-09-20T02:52:11.621882",
+        "framework": "PCI DSS",
+        "change_type": "risk_level_change",
+        "control_id": "3.2.1",
+        "old_risk": "high",
+        "new_risk": "medium",
+        "details": {
+          "control_name": "Do not store sensitive authentication data",
+          "reason": "Enhanced encryption implementation"
+        }
+      },
+      "tags": [
+        "pci_dss",
+        "risk_level_change"
+      ],
+      "action_required": false,
+      "related_assets": []
+    },
+    {
+      "id": "incident_INC-2023-001",
+      "timestamp": "2025-09-19T20:52:11.621935",
+      "type": "security_incident",
+      "category": "security",
+      "priority": "medium",
+      "title": "Security Incident: Unauthorized Access Attempt",
+      "summary": "Multiple failed login attempts detected on web server",
+      "details": {
+        "timestamp": "2025-09-19T20:52:11.621935",
+        "incident_id": "INC-2023-001",
+        "severity": "medium",
+        "type": "unauthorized_access_attempt",
+        "affected_assets": [
+          "ASSET-001",
+          "ASSET-005"
+        ],
+        "status": "resolved",
+        "compliance_impact": {
+          "frameworks_affected": [
+            "NIST 800-53",
+            "PCI DSS"
+          ],
+          "controls_impacted": [
+            "AC-3",
+            "AC-7",
+            "AU-2"
+          ],
+          "evidence_required": true,
+          "reporting_required": false
+        },
+        "details": {
+          "description": "Multiple failed login attempts detected on web server",
+          "resolution": "IP blocked, passwords reset, monitoring enhanced",
+          "response_time_minutes": 45
+        }
+      },
+      "tags": [
+        "unauthorized_access_attempt",
+        "medium",
+        "resolved"
+      ],
+      "action_required": false,
+      "related_assets": [
+        "ASSET-001",
+        "ASSET-005"
+      ]
+    },
+    {
+      "id": "regulatory_2025-09-19T14:52:11.621912_NIST 800-53",
+      "timestamp": "2025-09-19T14:52:11.621912",
+      "type": "regulatory_update",
+      "category": "compliance",
+      "priority": "low",
+      "title": "NIST 800-53: Enhanced Account Management Requirements",
+      "summary": "New guidance for automated account management and account monitoring",
+      "details": {
+        "timestamp": "2025-09-19T14:52:11.621912",
+        "framework": "NIST 800-53",
+        "update_type": "control_enhancement",
+        "control_ids": [
+          "AC-2(1)",
+          "AC-2(2)"
+        ],
+        "title": "Enhanced Account Management Requirements",
+        "summary": "New guidance for automated account management and account monitoring",
+        "impact": "medium",
+        "affected_assets": 15,
+        "details": {
+          "requires_action": true,
+          "deadline": "2025-10-20T14:52:11.621915",
+          "guidance_url": "https://csrc.nist.gov/updates/ac-2-enhancements"
+        }
+      },
+      "tags": [
+        "nist_800-53",
+        "control_enhancement"
+      ],
+      "action_required": true,
+      "related_assets": []
+    },
+    {
+      "id": "incident_INC-2023-002",
+      "timestamp": "2025-09-18T14:52:11.621938",
+      "type": "security_incident",
+      "category": "security",
+      "priority": "low",
+      "title": "Security Incident: Patch Compliance",
+      "summary": "Critical security patches pending on endpoint devices",
+      "details": {
+        "timestamp": "2025-09-18T14:52:11.621938",
+        "incident_id": "INC-2023-002",
+        "severity": "low",
+        "type": "patch_compliance",
+        "affected_assets": [
+          "ASSET-002",
+          "ASSET-004"
+        ],
+        "status": "in_progress",
+        "compliance_impact": {
+          "frameworks_affected": [
+            "NIST 800-53"
+          ],
+          "controls_impacted": [
+            "CM-2",
+            "SI-2"
+          ],
+          "evidence_required": true,
+          "reporting_required": false
+        },
+        "details": {
+          "description": "Critical security patches pending on endpoint devices",
+          "resolution": "Patches scheduled for next maintenance window",
+          "estimated_completion": "2025-09-21T14:52:11.621941"
+        }
+      },
+      "tags": [
+        "patch_compliance",
+        "low",
+        "in_progress"
+      ],
+      "action_required": true,
+      "related_assets": [
+        "ASSET-002",
+        "ASSET-004"
+      ]
+    },
+    {
+      "id": "regulatory_2025-09-17T14:52:11.621917_HIPAA",
+      "timestamp": "2025-09-17T14:52:11.621917",
+      "type": "regulatory_update",
+      "category": "compliance",
+      "priority": "low",
+      "title": "HIPAA: Transmission Security Clarification",
+      "summary": "Updated guidance on encryption requirements for PHI transmission",
+      "details": {
+        "timestamp": "2025-09-17T14:52:11.621917",
+        "framework": "HIPAA",
+        "update_type": "interpretation_clarification",
+        "control_ids": [
+          "164.312(e)(1)"
+        ],
+        "title": "Transmission Security Clarification",
+        "summary": "Updated guidance on encryption requirements for PHI transmission",
+        "impact": "low",
+        "affected_assets": 8,
+        "details": {
+          "requires_action": false,
+          "guidance_url": "https://hhs.gov/hipaa/security-rule-updates"
+        }
+      },
+      "tags": [
+        "hipaa",
+        "interpretation_clarification"
+      ],
+      "action_required": false,
+      "related_assets": []
+    }
+  ],
+  "metadata": {
+    "data_sources": [
+      "compliance_scores",
+      "asset_management",
+      "contract_tracking",
+      "regulatory_updates",
+      "security_incidents"
+    ],
+    "update_frequency": "real-time",
+    "retention_period": "30 days"
+  }
+}

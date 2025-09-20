@@ -1,0 +1,31 @@
+{
+  "memo_type": "weekly",
+  "generated_at": "2025-09-20T14:56:48.280597",
+  "period": {
+    "start_date": "2025-09-13",
+    "end_date": "2025-09-20"
+  },
+  "headline": "Weekly Intelligence Digest: September 13 - September 20, 2025",
+  "subheadline": "Comprehensive analysis of compliance, security, and operational intelligence",
+  "executive_summary": "Weekly intelligence summary covering compliance trends, security incidents, and operational changes across the PolicyEdge environment.",
+  "sections": [],
+  "sidebar": {
+    "quick_stats": {},
+    "highlights": [],
+    "upcoming": []
+  },
+  "metadata": {
+    "data_period": "7 days",
+    "sources": {
+      "compliance_changes": 3,
+      "asset_changes": 3,
+      "contract_alerts": 0,
+      "regulatory_updates": 3,
+      "security_incidents": 2,
+      "trend_analysis": 1
+    },
+    "priority_level": "medium",
+    "distribution": "management",
+    "classification": "confidential"
+  }
+}

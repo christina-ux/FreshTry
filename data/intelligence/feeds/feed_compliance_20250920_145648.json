@@ -1,0 +1,166 @@
+{
+  "feed_type": "compliance",
+  "generated_at": "2025-09-20T14:56:48.268194",
+  "total_items": 5,
+  "items": [
+    {
+      "id": "compliance_2025-09-20T12:56:48.268134_NIST 800-53",
+      "timestamp": "2025-09-20T12:56:48.268134",
+      "type": "compliance_change",
+      "category": "compliance",
+      "priority": "medium",
+      "title": "NIST 800-53 Score Improved (+3.2%)",
+      "summary": "Compliance score increased from 84.1% to 87.3% due to improvements in Control Implementation Rate, Evidence Quality",
+      "details": {
+        "timestamp": "2025-09-20T12:56:48.268134",
+        "framework": "NIST 800-53",
+        "change_type": "score_improvement",
+        "old_score": 84.1,
+        "new_score": 87.3,
+        "change": 3.2,
+        "details": {
+          "improved_metrics": [
+            "Control Implementation Rate",
+            "Evidence Quality"
+          ],
+          "reason": "Implementation of AC-2 and AU-4 controls"
+        }
+      },
+      "tags": [
+        "nist_800-53",
+        "score_improvement"
+      ],
+      "action_required": false,
+      "related_assets": []
+    },
+    {
+      "id": "compliance_2025-09-20T08:56:48.268140_HIPAA",
+      "timestamp": "2025-09-20T08:56:48.268140",
+      "type": "compliance_change",
+      "category": "compliance",
+      "priority": "medium",
+      "title": "Control Implemented: 164.308(a)(5)(ii)(C)",
+      "summary": "Control 'Assigned Security Responsibility' status changed from partially_compliant to compliant",
+      "details": {
+        "timestamp": "2025-09-20T08:56:48.268140",
+        "framework": "HIPAA",
+        "change_type": "control_implementation",
+        "control_id": "164.308(a)(5)(ii)(C)",
+        "old_status": "partially_compliant",
+        "new_status": "compliant",
+        "details": {
+          "control_name": "Assigned Security Responsibility",
+          "evidence_added": "Security policy document updated"
+        }
+      },
+      "tags": [
+        "hipaa",
+        "control_implementation"
+      ],
+      "action_required": false,
+      "related_assets": []
+    },
+    {
+      "id": "compliance_2025-09-20T02:56:48.268143_PCI DSS",
+      "timestamp": "2025-09-20T02:56:48.268143",
+      "type": "compliance_change",
+      "category": "compliance",
+      "priority": "low",
+      "title": "Risk Level Updated: 3.2.1",
+      "summary": "Risk level changed from high to medium: Enhanced encryption implementation",
+      "details": {
+        "timestamp": "2025-09-20T02:56:48.268143",
+        "framework": "PCI DSS",
+        "change_type": "risk_level_change",
+        "control_id": "3.2.1",
+        "old_risk": "high",
+        "new_risk": "medium",
+        "details": {
+          "control_name": "Do not store sensitive authentication data",
+          "reason": "Enhanced encryption implementation"
+        }
+      },
+      "tags": [
+        "pci_dss",
+        "risk_level_change"
+      ],
+      "action_required": false,
+      "related_assets": []
+    },
+    {
+      "id": "regulatory_2025-09-19T14:56:48.268171_NIST 800-53",
+      "timestamp": "2025-09-19T14:56:48.268171",
+      "type": "regulatory_update",
+      "category": "compliance",
+      "priority": "low",
+      "title": "NIST 800-53: Enhanced Account Management Requirements",
+      "summary": "New guidance for automated account management and account monitoring",
+      "details": {
+        "timestamp": "2025-09-19T14:56:48.268171",
+        "framework": "NIST 800-53",
+        "update_type": "control_enhancement",
+        "control_ids": [
+          "AC-2(1)",
+          "AC-2(2)"
+        ],
+        "title": "Enhanced Account Management Requirements",
+        "summary": "New guidance for automated account management and account monitoring",
+        "impact": "medium",
+        "affected_assets": 15,
+        "details": {
+          "requires_action": true,
+          "deadline": "2025-10-20T14:56:48.268173",
+          "guidance_url": "https://csrc.nist.gov/updates/ac-2-enhancements"
+        }
+      },
+      "tags": [
+        "nist_800-53",
+        "control_enhancement"
+      ],
+      "action_required": true,
+      "related_assets": []
+    },
+    {
+      "id": "regulatory_2025-09-17T14:56:48.268176_HIPAA",
+      "timestamp": "2025-09-17T14:56:48.268176",
+      "type": "regulatory_update",
+      "category": "compliance",
+      "priority": "low",
+      "title": "HIPAA: Transmission Security Clarification",
+      "summary": "Updated guidance on encryption requirements for PHI transmission",
+      "details": {
+        "timestamp": "2025-09-17T14:56:48.268176",
+        "framework": "HIPAA",
+        "update_type": "interpretation_clarification",
+        "control_ids": [
+          "164.312(e)(1)"
+        ],
+        "title": "Transmission Security Clarification",
+        "summary": "Updated guidance on encryption requirements for PHI transmission",
+        "impact": "low",
+        "affected_assets": 8,
+        "details": {
+          "requires_action": false,
+          "guidance_url": "https://hhs.gov/hipaa/security-rule-updates"
+        }
+      },
+      "tags": [
+        "hipaa",
+        "interpretation_clarification"
+      ],
+      "action_required": false,
+      "related_assets": []
+    }
+  ],
+  "metadata": {
+    "data_sources": [
+      "compliance_scores",
+      "asset_management",
+      "contract_tracking",
+      "regulatory_updates",
+      "security_incidents"
+    ],
+    "update_frequency": "real-time",
+    "retention_period": "30 days"
+  }
+}

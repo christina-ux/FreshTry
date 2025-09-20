@@ -1,0 +1,20 @@
+{
+  "memo_type": "incident",
+  "generated_at": "2025-09-20T14:56:48.286168",
+  "headline": "Security Incident Intelligence Brief",
+  "subheadline": "Analysis of 2 security incidents in the past 72 hours",
+  "executive_summary": "Security incident analysis covering 2 incidents and their compliance impact.",
+  "sections": [],
+  "sidebar": {
+    "quick_stats": {},
+    "highlights": [],
+    "upcoming": []
+  },
+  "metadata": {
+    "data_period": "72 hours",
+    "total_incidents": 2,
+    "priority_level": "medium",
+    "distribution": "security_team",
+    "classification": "restricted"
+  }
+}

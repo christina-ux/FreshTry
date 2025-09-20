@@ -1,0 +1,48 @@
+{
+  "feed_type": "comprehensive",
+  "generated_at": "2025-09-20T14:53:39.869522",
+  "total_items": 1,
+  "items": [
+    {
+      "id": "asset_2025-09-20T13:53:39.869484_ASSET-006",
+      "timestamp": "2025-09-20T13:53:39.869484",
+      "type": "asset_change",
+      "category": "operations",
+      "priority": "low",
+      "title": "New Asset Added: Database Backup Server",
+      "summary": "New server added to IT Operations with medium risk level",
+      "details": {
+        "timestamp": "2025-09-20T13:53:39.869484",
+        "change_type": "new_asset",
+        "asset_id": "ASSET-006",
+        "asset_name": "Database Backup Server",
+        "asset_type": "server",
+        "risk_level": "medium",
+        "details": {
+          "department": "IT Operations",
+          "location": "Secondary Data Center",
+          "data_classification": "internal"
+        }
+      },
+      "tags": [
+        "asset_management",
+        "new_asset"
+      ],
+      "action_required": false,
+      "related_assets": [
+        "ASSET-006"
+      ]
+    }
+  ],
+  "metadata": {
+    "data_sources": [
+      "compliance_scores",
+      "asset_management",
+      "contract_tracking",
+      "regulatory_updates",
+      "security_incidents"
+    ],
+    "update_frequency": "real-time",
+    "retention_period": "30 days"
+  }
+}

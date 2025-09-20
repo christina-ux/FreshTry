@@ -1,0 +1,24 @@
+{
+  "memo_type": "compliance",
+  "generated_at": "2025-09-20T14:56:48.288807",
+  "headline": "Compliance Intelligence Update",
+  "subheadline": "Regulatory compliance status and recent developments",
+  "executive_summary": "Compliance intelligence update covering regulatory developments and control implementation status.",
+  "sections": [],
+  "sidebar": {
+    "quick_stats": {},
+    "highlights": [],
+    "upcoming": []
+  },
+  "metadata": {
+    "data_period": "7 days",
+    "frameworks_covered": [
+      "HIPAA",
+      "NIST 800-53",
+      "PCI DSS"
+    ],
+    "priority_level": "medium",
+    "distribution": "compliance_team",
+    "classification": "confidential"
+  }
+}

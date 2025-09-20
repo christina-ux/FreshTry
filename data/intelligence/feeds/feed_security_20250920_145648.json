@@ -1,0 +1,145 @@
+{
+  "feed_type": "security",
+  "generated_at": "2025-09-20T14:56:48.271222",
+  "total_items": 3,
+  "items": [
+    {
+      "id": "asset_risk_2025-09-20T10:56:48.271206_ASSET-003",
+      "timestamp": "2025-09-20T10:56:48.271206",
+      "type": "asset_risk_change",
+      "category": "security",
+      "priority": "medium",
+      "title": "Asset Risk Change: Customer Database Server",
+      "summary": "Risk level changed from critical to high",
+      "details": {
+        "timestamp": "2025-09-20T10:56:48.271206",
+        "change_type": "risk_level_change",
+        "asset_id": "ASSET-003",
+        "asset_name": "Customer Database Server",
+        "old_risk": "critical",
+        "new_risk": "high",
+        "details": {
+          "reason": "Security patches applied",
+          "updated_controls": [
+            "AC-3",
+            "SC-7"
+          ]
+        }
+      },
+      "tags": [
+        "asset_management",
+        "risk_assessment",
+        "high"
+      ],
+      "action_required": true,
+      "related_assets": [
+        "ASSET-003"
+      ]
+    },
+    {
+      "id": "incident_INC-2023-001",
+      "timestamp": "2025-09-19T20:56:48.271178",
+      "type": "security_incident",
+      "category": "security",
+      "priority": "medium",
+      "title": "Security Incident: Unauthorized Access Attempt",
+      "summary": "Multiple failed login attempts detected on web server",
+      "details": {
+        "timestamp": "2025-09-19T20:56:48.271178",
+        "incident_id": "INC-2023-001",
+        "severity": "medium",
+        "type": "unauthorized_access_attempt",
+        "affected_assets": [
+          "ASSET-001",
+          "ASSET-005"
+        ],
+        "status": "resolved",
+        "compliance_impact": {
+          "frameworks_affected": [
+            "NIST 800-53",
+            "PCI DSS"
+          ],
+          "controls_impacted": [
+            "AC-3",
+            "AC-7",
+            "AU-2"
+          ],
+          "evidence_required": true,
+          "reporting_required": false
+        },
+        "details": {
+          "description": "Multiple failed login attempts detected on web server",
+          "resolution": "IP blocked, passwords reset, monitoring enhanced",
+          "response_time_minutes": 45
+        }
+      },
+      "tags": [
+        "unauthorized_access_attempt",
+        "medium",
+        "resolved"
+      ],
+      "action_required": false,
+      "related_assets": [
+        "ASSET-001",
+        "ASSET-005"
+      ]
+    },
+    {
+      "id": "incident_INC-2023-002",
+      "timestamp": "2025-09-18T14:56:48.271185",
+      "type": "security_incident",
+      "category": "security",
+      "priority": "low",
+      "title": "Security Incident: Patch Compliance",
+      "summary": "Critical security patches pending on endpoint devices",
+      "details": {
+        "timestamp": "2025-09-18T14:56:48.271185",
+        "incident_id": "INC-2023-002",
+        "severity": "low",
+        "type": "patch_compliance",
+        "affected_assets": [
+          "ASSET-002",
+          "ASSET-004"
+        ],
+        "status": "in_progress",
+        "compliance_impact": {
+          "frameworks_affected": [
+            "NIST 800-53"
+          ],
+          "controls_impacted": [
+            "CM-2",
+            "SI-2"
+          ],
+          "evidence_required": true,
+          "reporting_required": false
+        },
+        "details": {
+          "description": "Critical security patches pending on endpoint devices",
+          "resolution": "Patches scheduled for next maintenance window",
+          "estimated_completion": "2025-09-21T14:56:48.271188"
+        }
+      },
+      "tags": [
+        "patch_compliance",
+        "low",
+        "in_progress"
+      ],
+      "action_required": true,
+      "related_assets": [
+        "ASSET-002",
+        "ASSET-004"
+      ]
+    }
+  ],
+  "metadata": {
+    "data_sources": [
+      "compliance_scores",
+      "asset_management",
+      "contract_tracking",
+      "regulatory_updates",
+      "security_incidents"
+    ],
+    "update_frequency": "real-time",
+    "retention_period": "30 days"
+  }
+}
