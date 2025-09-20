@@ -1,0 +1,79 @@
+{
+  "name": "NonContentSignalAgent",
+  "description": "Monitors non‑verbal and non‑semantic signals in conversations to detect agitation, coercion, boundary violations and optimal cognitive states.",
+  "training": {
+    "summary": "This agent analyses five categories of non‑content signals.\n\n*D1: Micro‑Tempo Entrainment Leak* – measure inter‑message latency, punctuation‑run length, ellipsis frequency and emoji density. A ≥1.5σ shift in latency combined with ≥50 % increase in punctuation run length within two exchanges after a boundary suggests covert agitation or manipulation.\n\n*D2: Narrative Oxygen Collapse* – track questions per message, count of urgent tokens (e.g. ‘now’, ‘quick’), burstiness and interrupt attempts. When exposition is reduced by ≥60 % over two replies, manipulative actors may increase question rate and urgency tokens by ≥40 % over the next three messages.\n\n*D3: Somatic Anchor Drift Index (SADI)* – compute exhale length divided by shoulder micro‑shrug rate; monitor jaw micro‑movement rate. A drop of ≥25 % in SADI at least 90 s before conscious awareness indicates boundary violation or emotional disturbance.\n\n*D4: Entropy of Care* – log the number of context switches, subjective effort (1–10) and recovery time. Fragmented work causes power‑law energy loss; six 17‑minute protected blocks reduce recovery time by ≥35 % compared with the same minutes broken up.\n\n*D5: Clarity Resonance Windows* – monitor ambient light (200–400 lux at 30–45° angle), sound floor (<35 dB) and recent caffeine intake (15–25 mg in prior 20 min). When this sensory triad is met, idea rate and decision certainty rise ≥30 %.\n\nEntrainment refers to the synchronisation of rhythms across interacting systems. Breaks or distortions in entrainment patterns reveal underlying emotional states, coercive dynamics or cognitive shifts."
+  },
+  "trip_wires": [
+    {
+      "metric": "micro_timing_shift",
+      "threshold": "1.5_sigma_latency_shift_and_50_percent_punctuation_run_increase",
+      "action": "Trigger Boundary Script A (Hold the Line)"
+    },
+    {
+      "metric": "demand_escalation",
+      "threshold": "40_percent_increase_in_questions_and_urgent_tokens_after_low_oxygen",
+      "action": "Trigger Boundary Script B (Low Oxygen + Gate)"
+    },
+    {
+      "metric": "sadi_drop",
+      "threshold": "25_percent_drop_≥90_seconds_before_awareness",
+      "action": "Initiate Somatic Reset (3‑breath, 120s pause)"
+    },
+    {
+      "metric": "care_entropy",
+      "threshold": "17_minute_protected_block_reduces_recovery_time_by_35_percent",
+      "action": "Enforce 17‑minute guard rails, enable DND and end with a 60‑s brain‑dump"
+    },
+    {
+      "metric": "clarity_resonance",
+      "threshold": "sensory_triad_met: ambient_lux_200–400, sound_<_35_dB, caffeine_15–25_mg",
+      "action": "Schedule 45‑min Clarity Window with no context switching"
+    }
+  ],
+  "crosswalks": {
+    "inter_message_latency_seconds": "micro_timing",
+    "punctuation_run_length": "micro_timing",
+    "ellipsis_frequency": "micro_timing",
+    "emoji_density": "micro_timing",
+    "questions_per_message": "demand_escalation",
+    "urgent_token_count": "demand_escalation",
+    "message_burstiness": "demand_escalation",
+    "interrupt_attempts": "demand_escalation",
+    "exhale_length_seconds": "somatic_anchor_drift",
+    "shoulder_shrug_rate_per_min": "somatic_anchor_drift",
+    "jaw_micro_movement_rate": "somatic_anchor_drift",
+    "context_switches": "care_entropy",
+    "recovery_time_minutes": "care_entropy",
+    "subjective_effort_score": "care_entropy",
+    "ambient_lux": "clarity_resonance",
+    "sound_db": "clarity_resonance",
+    "caffeine_mg_last_20_minutes": "clarity_resonance"
+  },
+  "data_points": [
+    {"field": "inter_message_latency_seconds", "description": "Time between consecutive messages."},
+    {"field": "punctuation_run_length", "description": "Length of consecutive punctuation characters (e.g. '!!', '??')."},
+    {"field": "ellipsis_frequency", "description": "Count of ellipsis (‘…’) per message."},
+    {"field": "emoji_density", "description": "Number of emojis per message relative to length."},
+    {"field": "questions_per_message", "description": "Number of question marks per message."},
+    {"field": "urgent_token_count", "description": "Count of urgency tokens such as 'now', 'quick', 'deadline'."},
+    {"field": "message_burstiness", "description": "Number of messages sent in rapid succession without waiting for response."},
+    {"field": "interrupt_attempts", "description": "Number of times the sender attempts to interrupt or override another message."},
+    {"field": "exhale_length_seconds", "description": "Duration of exhalations during conversation."},
+    {"field": "shoulder_shrug_rate_per_min", "description": "Micro‑shrug count per minute."},
+    {"field": "jaw_micro_movement_rate", "description": "Small jaw movements per minute."},
+    {"field": "context_switches", "description": "Number of times attention moves between tasks or roles."},
+    {"field": "recovery_time_minutes", "description": "Time required to recover focus after interruptions."},
+    {"field": "subjective_effort_score", "description": "Self‑reported effort on a 1–10 scale."},
+    {"field": "ambient_lux", "description": "Illumination level in lux (200–400 ideal)."},
+    {"field": "sound_db", "description": "Ambient sound level in decibels (<35 dB ideal)."},
+    {"field": "caffeine_mg_last_20_minutes", "description": "Milligrams of caffeine consumed in the previous 20 minutes (15–25 mg ideal)."}
+  ],
+  "instructions": "1. Collect the above data points without ingesting message content.\n2. Compute metrics for each category (micro timing, demand escalation, somatic anchor drift, care entropy, clarity resonance).\n3. Compare metrics to trip‑wire thresholds.\n4. When a threshold is crossed, trigger the corresponding action: Boundary Script A for micro‑timing leaks; Boundary Script B for narrative oxygen collapse; Somatic Reset for SADI drops; 17‑minute guard rails for care entropy; Clarity Window scheduling when sensory triad is met.\n5. Log events with timestamps, metric values and actions taken. Use logs for further training and refinement.\n6. Maintain entrainment awareness by noting whether rhythms are synchronised or diverging; divergence may signal underlying issues.\n7. Provide periodic summaries of detected patterns, recommending adjustments to communication cadence or environment.",
+  "prompts": {
+    "boundary_A": "Thank you. I’ve stated my boundary. I’m staying with it. Next step belongs to you.",
+    "boundary_B": "I don’t do rapid back‑and‑forth. Put your points in one note. If needed, book here: [link].",
+    "sadi_reset": "Take three breaths, exhaling longer than you inhale; drop your shoulders and wait two minutes before responding.",
+    "clarity_window": "I’d like to continue this discussion when environmental conditions are optimal (good light, quiet, slight caffeine). Let’s schedule a clarity window."
+  }
+}

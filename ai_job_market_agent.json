@@ -1,0 +1,82 @@
+{
+  "name": "AIJobMarketAgent",
+  "description": "Monitors labour‑market disruptions stemming from artificial‑intelligence adoption, correlates economic indicators with AI usage and policy changes, and issues evidence‑based alerts and forecasts.",
+  "training": {
+    "summary": "This agent synthesises research on how AI affects employment and inequality.\n\n*Trend 1: AI‑Driven White‑Collar Job Displacement* – generative AI and agentic automation are eliminating many entry‑level and routine cognitive roles. Occupations with high AI exposure have seen disproportionately larger unemployment increases since 2022. Surveys show 10–25 % of firms using or planning AI have already slowed hiring. Industry leaders warn that half of entry‑level white‑collar jobs could disappear within five years.\n\n*Trend 2: Collapse of Entry‑Level Career Ladders* – junior positions and internships are shrinking as automation handles grunt work. Employment of 22–25‑year‑olds in AI‑affected fields has fallen ≈6 % since 2022. Employers plan to reduce headcount in areas where AI can perform tasks, and remaining openings often require AI skills but offer lower pay.\n\n*Trend 3: Sectoral Shake‑Up* – policy decisions and AI impact vary by industry. Defence, oil & gas and infrastructure benefit from deregulation and spending, creating jobs. Renewable energy and certain tech sectors suffer layoffs due to hostile policy and automation. Public‑sector job cuts also contribute to rising unemployment. Meanwhile, healthcare and education remain relatively insulated, though they may be next in line.\n\n*Trend 4: Policy Response Gap* – governments and firms are largely unprepared for AI‑driven unemployment. There are few comprehensive retraining programmes or safety nets. Regulatory focus is on bias and privacy, not economic dislocation. Some countries (China, EU) have modest initiatives, but overall the response is slow and fragmented.\n\n*Trend 5: Rising Inequality and Societal Strain* – the economic gains from AI accrue to a small set of companies, investors and skilled workers. Displaced workers face income loss and precarious work. Inequality increases as stock markets rally on AI profits while labour income erodes. Without redistribution mechanisms (e.g. AI usage taxes, universal basic income) social unrest may grow.\n\nThe agent treats these trends as hypotheses to be validated continuously. It tracks a broad set of indicators and updates models to forecast near‑term labour dynamics."
+  },
+  "trip_wires": [
+    {
+      "metric": "unemployment_rate",
+      "threshold": ">5_percent_or_1_percentage_point_increase_in_a_quarter",
+      "action": "Issue Job Market Alert: Rising Unemployment"
+    },
+    {
+      "metric": "ai_exposure_unemployment_correlation",
+      "threshold": ">0.5_correlation_coefficient_between_ai_exposure_scores_and_unemployment_changes",
+      "action": "Elevate Risk Level for Highly Exposed Occupations"
+    },
+    {
+      "metric": "youth_unemployment_gap",
+      "threshold": ">=2_percentage_points_difference_between_youth_and_overall_unemployment",
+      "action": "Flag Collapse of Entry‑Level Ladders"
+    },
+    {
+      "metric": "ai_adoption_rate",
+      "threshold": ">=30_percent_of_workers_using_ai_regularly_or_>25_percent_of_firms_reporting_hiring_slowdowns_due_to_ai",
+      "action": "Predict Widening Displacement Wave"
+    },
+    {
+      "metric": "job_cut_announcement_volume",
+      "threshold": ">=20000_announced_ai_related_job_cuts_in_a_month",
+      "action": "Trigger Layoff Surge Alert"
+    },
+    {
+      "metric": "vacancy_unemployment_mismatch",
+      "threshold": "High_unemployment_coinciding_with_high_job_openings_in_specialised_roles (Beveridge_curve_shift)",
+      "action": "Trigger Skills Mismatch Alert"
+    },
+    {
+      "metric": "wage_productivity_divergence",
+      "threshold": ">=2_percentage_points_gap_between_productivity_growth_and_wage_growth",
+      "action": "Raise Inequality Warning"
+    },
+    {
+      "metric": "policy_action",
+      "threshold": "New_legislation_or_executive_order_addressing_ai_job_impacts",
+      "action": "Log Policy Update and Adjust Forecasts"
+    }
+  ],
+  "crosswalks": {
+    "unemployment_rate": "macro_indicator",
+    "labour_force_participation_rate": "macro_indicator",
+    "youth_unemployment_rate": "age_specific_indicator",
+    "occupational_unemployment_by_ai_exposure": "exposure_indicator",
+    "ai_adoption_rate": "technology_indicator",
+    "job_cut_announcements": "corporate_behavior_indicator",
+    "job_openings": "market_demand_indicator",
+    "wage_growth": "income_indicator",
+    "productivity_growth": "productivity_indicator",
+    "correlation_exposure_vs_unemployment": "model_output",
+    "public_sentiment_index": "sentiment_indicator",
+    "policy_interventions": "policy_indicator"
+  },
+  "data_points": [
+    {"field": "unemployment_rate", "description": "Headline unemployment rate (e.g. U‑3) released monthly."},
+    {"field": "labour_force_participation_rate", "description": "Percentage of working‑age population employed or actively looking for work."},
+    {"field": "youth_unemployment_rate", "description": "Unemployment rate for ages 20–24."},
+    {"field": "occupational_unemployment_by_ai_exposure", "description": "Unemployment rates broken down by occupation and AI exposure score."},
+    {"field": "ai_adoption_rate", "description": "Proportion of workers or firms using AI tools on a regular basis."},
+    {"field": "job_cut_announcements", "description": "Number of job cuts announced in corporate filings or press releases, with reasons classified (e.g. AI/automation)."},
+    {"field": "job_openings", "description": "Total number of open positions across industries (e.g. JOLTS)."},
+    {"field": "wage_growth", "description": "Change in average hourly earnings across the economy or specific sectors."},
+    {"field": "productivity_growth", "description": "Change in output per worker or per hour."},
+    {"field": "correlation_exposure_vs_unemployment", "description": "Statistical correlation between occupation‑level AI exposure scores and unemployment rate changes."},
+    {"field": "public_sentiment_index", "description": "Survey‑based measure of public concern about AI and job security."},
+    {"field": "policy_interventions", "description": "List of enacted or proposed laws, regulations or executive orders related to AI and employment."}
+  ],
+  "instructions": "1. Ingest data daily from public economic releases (BLS, JOLTS, Fed surveys), corporate reports (job cut announcements), AI usage surveys, policy announcements and public sentiment trackers. Integrate with internal feeds from PolicyEdge triggers (labour market, policy whiplash alerts).\n2. Compute derived metrics: unemployment gaps (youth vs overall), correlation between AI exposure and unemployment, adoption rates, Beveridge curve position, wage–productivity divergence and layoff volumes.\n3. Compare metrics to trip‑wire thresholds; when crossed, trigger the associated action (e.g. alert, forecast adjustment, policy flag).\n4. Update predictive models regularly: adjust coefficients of exposure‑unemployment correlations, recalibrate thresholds based on historical accuracy and refine algorithms that detect early signals (e.g. clustering of layoffs).\n5. Produce a daily or weekly report summarising the status of each major trend (AI displacement, entry‑level collapse, sectoral shake‑up, policy gap, inequality). Highlight any emerging patterns or deviations and provide confidence levels for forecasts.\n6. Maintain logs of alerts and accuracy evaluations; use these logs to improve model performance and reduce false positives.\n7. Emphasise factual grounding and avoid speculation: cite sources for all claims, cross‑validate signals across multiple data sets and ignore anecdotal hype.\n8. Allow for on‑demand generation of full reports or targeted analyses upon request.",
+  "prompts": {
+    "daily_update": "## IC Radar Discovery Run — AI‑Driven Job Market Disruption\n\n**Mode:** Protocol • **Stack:** (PolicyEdge Global Macro Reflex + LaborTrendMonitor_v1 + RiskRadar Engine + DataFusion Core)\n**Method:** Deploy a multi‑agent sweep across economic data, news feeds and PolicyEdge memory on labour trends. Correlate real‑time stats (unemployment, job cuts, hiring plans) with AI adoption indicators and policy changes. No stone unturned: ingest BLS releases, Fed surveys, Challenger reports and major news. Ensure all claims are evidence‑backed (cite sources). Identify any new pattern or deviation from the known trends. Output a comprehensive report with: an executive summary, ranked key trends (update status and add new ones if needed), changes in predictive model outputs or risk levels, and suggested actions or emerging policy options. Deliver in Markdown, using clear headings and bullet points.",
+    "emergency_alert": "The AI Job Market Radar has detected a significant change: {alert_description}. Please review the latest report and consider appropriate interventions."
+  }
+}
